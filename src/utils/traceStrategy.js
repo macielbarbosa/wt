@@ -1,8 +1,27 @@
+import { BedRotation } from './BedRotation/index'
 import { emblems, workHours } from './constants'
 
 const higherSalary = (w1, w2) => w2.workingReward / w2.workingHours - w1.workingReward / w1.workingHours
 
 export const traceStrategy = (workers, houses) => {
+  const bedRotation = new BedRotation(
+    {
+      workerClass: 'Miner',
+      gender: 'Male',
+      rarity: 'Uncommon',
+      workingReward: 72,
+      workingHours: 12,
+      emblem: 'Union',
+    },
+    {
+      workerClass: 'Fisherman',
+      gender: 'Male',
+      rarity: 'Uncommon',
+      workingReward: 108,
+      workingHours: 18,
+      emblem: 'Union',
+    },
+  )
   /* workers = workers.sort(higherSalary)
 
   const housesEmblems = houses.slice(1).map((house) => house.emblem)
@@ -27,8 +46,8 @@ export const traceStrategy = (workers, houses) => {
     })
   })
   console.log('bedsByEmblems', bedsByEmblems) */
+  console.log('--------------------------------------------------')
 
   const strategy = { coinsPerDay: 0 }
-  console.log('-----------------------')
   return strategy
 }
