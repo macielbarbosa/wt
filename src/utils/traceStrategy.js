@@ -4,7 +4,8 @@ import { emblems, workHours } from './constants'
 const higherSalary = (w1, w2) => w2.workingReward / w2.workingHours - w1.workingReward / w1.workingHours
 
 export const traceStrategy = (workers, houses) => {
-  const bedRotation = new BedRotation(
+  console.clear()
+  const bedRotation1 = new BedRotation(
     {
       workerClass: 'Miner',
       gender: 'Male',
@@ -20,6 +21,60 @@ export const traceStrategy = (workers, houses) => {
       workingReward: 108,
       workingHours: 18,
       emblem: 'Union',
+    },
+  )
+  const bedRotation2 = new BedRotation(
+    {
+      workerClass: 'Builder',
+      gender: 'Male',
+      rarity: 'Uncommon',
+      workingReward: 144,
+      workingHours: 24,
+      emblem: 'Union',
+    },
+    {
+      workerClass: 'Fisherman',
+      gender: 'Male',
+      rarity: 'Uncommon',
+      workingReward: 108,
+      workingHours: 18,
+      emblem: 'Union',
+    },
+  )
+  const bedRotation3 = new BedRotation(
+    {
+      workerClass: 'Pirate',
+      gender: 'Male',
+      rarity: 'Common',
+      workingReward: 192,
+      workingHours: 48,
+      emblem: 'Villain',
+    },
+    {
+      workerClass: 'Fisherman',
+      gender: 'Male',
+      rarity: 'Uncommon',
+      workingReward: 108,
+      workingHours: 18,
+      emblem: 'Union',
+    },
+  )
+  const bedRotation4 = new BedRotation(
+    {
+      workerClass: 'Old',
+      gender: 'Male',
+      rarity: 'Common',
+      workingReward: 288,
+      workingHours: 72,
+      emblem: 'Citizen',
+    },
+    {
+      workerClass: 'Bandit',
+      gender: 'Male',
+      rarity: 'Common',
+      workingReward: 24,
+      workingHours: 6,
+      emblem: 'Villain',
     },
   )
   /* workers = workers.sort(higherSalary)
@@ -46,7 +101,7 @@ export const traceStrategy = (workers, houses) => {
     })
   })
   console.log('bedsByEmblems', bedsByEmblems) */
-  console.log('--------------------------------------------------')
+  // console.log('--------------------------------------------------')
 
   const strategy = { coinsPerDay: 0 }
   return strategy

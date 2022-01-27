@@ -9,10 +9,10 @@ export class Step {
 
   next() {
     const { shorterTimeLeft } = this
-    console.log(shorterTimeLeft)
+    // console.log(shorterTimeLeft)
     const elapsedTime = this.elapsedTime + shorterTimeLeft
-    const activity1 = this.activity1.next(shorterTimeLeft)
-    const activity2 = this.activity2.next(shorterTimeLeft)
+    const activity1 = this.activity1.next(shorterTimeLeft, this.activity2)
+    const activity2 = this.activity2.next(shorterTimeLeft, this.activity1)
     return new Step(activity1, activity2, elapsedTime)
   }
 
@@ -21,23 +21,19 @@ export class Step {
       activity1: { type: typeActivity1, timeLeft: timeLeftActivity1 },
       activity2: { type: typeActivity2, timeLeft: timeLeftActivity2 },
     } = this
-    if ([activities.idle, activities.exhausted].includes(typeActivity1)) {
-      console.log('motivo 1')
-      return timeLeftActivity2
-    }
-    if ([activities.idle, activities.exhausted].includes(typeActivity2)) {
-      console.log('motivo 2')
+    if (typeActivity2 === activities.idle) {
+      //console.log('motivo 2')
       return timeLeftActivity1
     }
     if (typeActivity1 === activities.resting) {
-      console.log('motivo 3')
+      //console.log('motivo 3')
       return timeLeftActivity1
     }
     if (typeActivity2 === activities.resting) {
-      console.log('motivo 4')
+      //console.log('motivo 4')
       return timeLeftActivity2
     }
-    console.log('motivo 5')
+    //console.log('motivo 5')
     return timeLeftActivity1 < timeLeftActivity2 ? timeLeftActivity1 : timeLeftActivity2
   }
 
