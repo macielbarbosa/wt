@@ -6,8 +6,6 @@ export class BedRotation {
   constructor(worker1, worker2) {
     const worker2HasLessWorkingHours = worker2.workingHours < worker1.workingHours
     if (worker2HasLessWorkingHours) [worker1, worker2] = [worker2, worker1]
-    worker1 = worker1.workingHours < worker2.workingHours ? worker1 : worker2
-    worker2 = worker1 === worker1 ? worker2 : worker1
     const activity1 = new Activity(worker1, activities.working, worker1.workingHours)
     const activity2 = new Activity(worker2, activities.idle)
     this.currentStep = new Step(activity1, activity2)
