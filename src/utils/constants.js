@@ -1,0 +1,105 @@
+export const emblems = Object.freeze({
+  noEmblem: 'No Emblem',
+  royal: 'Royal',
+  citizen: 'Citizen',
+  warrior: 'Warrior',
+  villain: 'Villain',
+  exile: 'Exile',
+  protector: 'Protector',
+  enchanter: 'Enchanter',
+  union: 'Union',
+})
+
+export const tiers = Object.freeze({
+  tier1: 'Tier 1',
+  tier2: 'Tier 2',
+  tier3: 'Tier 3',
+})
+
+export const rarities = Object.freeze({
+  common: 'Common',
+  uncommon: 'Uncommon',
+  rare: 'Rare',
+  epic: 'Epic',
+  unique: 'Unique',
+  legendary: 'Legendary',
+})
+
+export const beds = Object.freeze({
+  regular: 'Regular Bed',
+  luxury: 'Luxury Bed',
+  legendaryRoyal: 'Legendary Royal Bed',
+})
+
+export const genders = Object.freeze({
+  male: 'Male',
+  female: 'Female',
+})
+
+export const workingHoursList = [72, 48, 36, 24, 18, 12, 8, 6]
+
+export const houseRarities = [rarities.common, rarities.uncommon, rarities.rare, rarities.unique]
+
+export const workerClasses = Object.freeze({
+  bandit: 'Bandit',
+  villager: 'Villager',
+  innKeeper: 'Inn Keeper',
+  young: 'Young',
+  pirate: 'Pirate',
+  old: 'Old',
+  blacksmith: 'Blacksmith',
+  miner: 'Miner',
+  fisherman: 'Fisherman',
+  builder: 'Builder',
+  farmer: 'Farmer',
+  adventurer: 'Adventurer',
+  banditLeader: 'Bandit Leader',
+  bard: 'Bard',
+  dancer: 'Dancer',
+  mage: 'Mage',
+  archer: 'Archer',
+  gladiator: 'Gladiator',
+  priestess: 'Priestess',
+  pirateLeader: 'Pirate Leader',
+  ninja: 'Ninja',
+  cult: 'Cult',
+  alchemist: 'Alchemist',
+  royalGuard: 'Royal Guard',
+  knight: 'Knight',
+  thief: 'Thief',
+  rogue: 'Rogue',
+  paladin: 'Paladin',
+  santaClaus: 'Santa Claus',
+  necromancer: 'Necromancer',
+  plagueDoctor: 'Plague Doctor',
+  prince: 'Prince',
+  princess: 'Princess',
+  king: 'King',
+  queen: 'Queen',
+})
+
+export const multipleGenders = [
+  workerClasses.old,
+  workerClasses.young,
+  workerClasses.pirate,
+  workerClasses.bandit,
+  workerClasses.adventurer,
+  workerClasses.mage,
+  workerClasses.ninja,
+  workerClasses.cult,
+  workerClasses.alchemist,
+  workerClasses.royalGuard,
+  workerClasses.necromancer,
+  workerClasses.plagueDoctor,
+]
+export const defaultFreeHouse = {
+  rarity: tiers.tier1,
+  capacity: 2,
+}
+
+export const activities = Object.freeze({
+  idle: 'Idle',
+  working: 'Working',
+  exhausted: 'Exhausted',
+  resting: 'Resting',
+})

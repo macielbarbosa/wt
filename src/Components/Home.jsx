@@ -1,18 +1,21 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
+import { Typography } from '@mui/material'
 
-import { Page } from './Page'
-
-const useStyles = makeStyles(() => ({
-  root: {},
-}))
+import { Page } from 'common/Page'
+import { Houses } from './Houses'
+import { Workers } from './Workers'
+import { Resume } from './Resume'
+import { useStrings } from '../strings/context'
 
 export const Home = () => {
-  const classes = useStyles()
-
+  const strings = useStrings()
   return (
     <Page>
-      <div className={classes.root}>Home</div>
+      <Resume />
+      <Typography variant="h5">{strings.houses}</Typography>
+      <Houses />
+      <Typography variant="h5">{strings.workers}</Typography>
+      <Workers />
     </Page>
   )
 }

@@ -9,11 +9,11 @@ export class StringsProvider extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      strings: ptBr,
+      strings: enUs,
     }
   }
 
-  setStrings = language => {
+  setStrings = (language) => {
     this.setState({ strings: language === enumLanguage.portuguese ? ptBr : enUs })
   }
 
