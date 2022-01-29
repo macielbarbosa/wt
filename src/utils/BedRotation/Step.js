@@ -8,15 +8,13 @@ export class Step {
   }
 
   next() {
+    const elapsedTime = this.elapsedTime + this.shorterTimeLeft
     if (this.activity1.mustWaitForActivityToRest(this.activity2)) {
-      const elapsedTime = this.elapsedTime + this.shorterTimeLeft
       return new Step(this.activity1, this.activity2.next(), elapsedTime)
     }
     if (this.activity2.mustWaitForActivityToRest(this.activity1)) {
-      const elapsedTime = this.elapsedTime + this.shorterTimeLeft
       return new Step(this.activity1.next(), this.activity2, elapsedTime)
     }
-    const elapsedTime = this.elapsedTime + this.shorterTimeLeft
     const activity1 = this.activity1.next(this.shorterTimeLeft)
     const activity2 = this.activity2.next(this.shorterTimeLeft)
     return new Step(activity1, activity2, elapsedTime)
