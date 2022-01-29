@@ -14,12 +14,8 @@ export class BedRotation {
   }
 
   makeSteps = () => {
-    /* let i = 3
-    while (i--) {
-      this.currentStep = this.currentStep.next()
-      this.steps.push(this.currentStep)
-    } */
-    while (!this.isFinished) {
+    let i = 3 // parei passo tres falhando
+    while (i-- /* !this.isFinished */) {
       this.currentStep = this.currentStep.next()
       this.steps.push(this.currentStep)
     }

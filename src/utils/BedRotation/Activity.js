@@ -1,31 +1,66 @@
 import { activities } from '../constants'
 
 export class Activity {
-  constructor(worker, type, timeLeft) {
+  constructor(worker, type, timeLeft = 0) {
     this.worker = worker
     this.type = type
     this.timeLeft = timeLeft
   }
 
-  next(time, otherActivity) {
-    if (this.type === activities.idle) {
-      return new Activity(this.worker, activities.working, this.worker.workingHours)
-    }
-    if (this.type === activities.working) {
-      if (time >= this.timeLeft) {
-        return new Activity(this.worker, activities.resting, this.worker.workingHours)
+  newActivity = (...params) => new Activity(this.worker, ...params)
+
+  next(time = this.timeLeft) {
+    switch (this.type) {
+      case activities.idle:
+        return this.newActivity(activities.working, this.worker.workingHours)
+      case activities.working: {
+        if (time === this.timeLeft) {
+          return this.newActivity(activities.exhausted)
+        }
+        return this.newActivity(activities.working, this.timeLeft - time)
       }
-      return new Activity(this.worker, activities.working, this.timeLeft - time)
-    }
-    if (this.type === activities.resting) {
-      if (this.timeLeft === time) {
-        return new Activity(this.worker, activities.working, this.worker.workingHours)
+      case activities.exhausted: {
+        return this.newActivity(activities.resting, this.worker.workingHours)
       }
-      return new Activity(this.worker, activities.resting, this.timeLeft - time)
+      case activities.resting: {
+        if (this.timeLeft === time) {
+          return this.newActivity(activities.working, this.worker.workingHours)
+        }
+        return this.newActivity(activities.resting, this.timeLeft - time)
+      }
+      default:
+        return this
     }
   }
 
-  get isExhasted() {
+  get timeToFinishRest() {
+    switch (this.type) {
+      case activities.working:
+        return this.timeLeft + this.worker.workingHours
+      case activities.exhausted:
+        return this.worker.workingHours
+      default:
+        return this.timeLeft
+    }
+  }
+
+  coinsLostForWaiting(activity) {
+    const { workingReward, workingHours } = activity.worker
+    return (activity.timeToFinishRest * workingReward) / workingHours
+  }
+
+  mustWaitForActivityToRest(activity) {
+    return (
+      activity.isResting ||
+      (this.isExhausted && this.coinsLostForWaiting(activity) < activity.coinsLostForWaiting(this))
+    )
+  }
+
+  get isExhausted() {
     return this.type === activities.exhausted
+  }
+
+  get isResting() {
+    return this.type === activities.resting
   }
 }

@@ -8,11 +8,17 @@ export class Step {
   }
 
   next() {
-    const { shorterTimeLeft } = this
-    // console.log(shorterTimeLeft)
-    const elapsedTime = this.elapsedTime + shorterTimeLeft
-    const activity1 = this.activity1.next(shorterTimeLeft, this.activity2)
-    const activity2 = this.activity2.next(shorterTimeLeft, this.activity1)
+    if (this.activity1.mustWaitForActivityToRest(this.activity2)) {
+      const elapsedTime = this.elapsedTime + this.shorterTimeLeft
+      return new Step(this.activity1, this.activity2.next(), elapsedTime)
+    }
+    if (this.activity2.mustWaitForActivityToRest(this.activity1)) {
+      const elapsedTime = this.elapsedTime + this.shorterTimeLeft
+      return new Step(this.activity1.next(), this.activity2, elapsedTime)
+    }
+    const elapsedTime = this.elapsedTime + this.shorterTimeLeft
+    const activity1 = this.activity1.next(this.shorterTimeLeft)
+    const activity2 = this.activity2.next(this.shorterTimeLeft)
     return new Step(activity1, activity2, elapsedTime)
   }
 
@@ -22,18 +28,12 @@ export class Step {
       activity2: { type: typeActivity2, timeLeft: timeLeftActivity2 },
     } = this
     if (typeActivity2 === activities.idle) {
-      //console.log('motivo 2')
       return timeLeftActivity1
     }
-    if (typeActivity1 === activities.resting) {
-      //console.log('motivo 3')
-      return timeLeftActivity1
+    const hasExhausted = typeActivity1.isExhausted || typeActivity2.isExhausted
+    if (hasExhausted) {
+      return 0
     }
-    if (typeActivity2 === activities.resting) {
-      //console.log('motivo 4')
-      return timeLeftActivity2
-    }
-    //console.log('motivo 5')
     return timeLeftActivity1 < timeLeftActivity2 ? timeLeftActivity1 : timeLeftActivity2
   }
 
@@ -44,7 +44,8 @@ export class Step {
       elapsedTime,
     } = this
     console.log(
-      `${timeLeft1}h - ${type1} ------ ${elapsedTime}h ------ ${type2}`,
+      timeLeft1 ? timeLeft1 + 'h' : ' ',
+      `${type1} ------ ${elapsedTime}h ------ ${type2}`,
       Boolean(timeLeft2) ? `- ${timeLeft2}h` : '',
     )
   }

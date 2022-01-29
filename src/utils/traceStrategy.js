@@ -23,7 +23,7 @@ export const traceStrategy = (workers, houses) => {
       emblem: 'Union',
     },
   )
-  const bedRotation2 = new BedRotation(
+  /* const bedRotation2 = new BedRotation(
     {
       workerClass: 'Builder',
       gender: 'Male',
@@ -40,8 +40,8 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 18,
       emblem: 'Union',
     },
-  )
-  const bedRotation3 = new BedRotation(
+  ) */
+  /* const bedRotation3 = new BedRotation(
     {
       workerClass: 'Pirate',
       gender: 'Male',
@@ -76,7 +76,7 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 6,
       emblem: 'Villain',
     },
-  )
+  ) */
   /* workers = workers.sort(higherSalary)
 
   const housesEmblems = houses.slice(1).map((house) => house.emblem)
