@@ -1,4 +1,5 @@
 import { activities } from '../constants'
+import { Activity } from './Activity'
 
 export class Step {
   constructor(activity1, activity2, elapsedTime = 0) {
@@ -16,20 +17,20 @@ export class Step {
     } = this
     if (this.hasExhausted) {
       if (isResting1) {
-        return new Step(activity1.next(timeLeft1), activity2, this.elapsedTime + timeLeft1)
+        return new Step(activity1.next(timeLeft1), this.cloneActivity(activity2), this.elapsedTime + timeLeft1)
       }
       if (isResting2) {
-        return new Step(activity1, activity2.next(timeLeft2), this.elapsedTime + timeLeft2)
+        return new Step(this.cloneActivity(activity1), activity2.next(timeLeft2), this.elapsedTime + timeLeft2)
       }
       const loss1 = activity1.setLossWaiting(activity2)
       const loss2 = activity2.setLossWaiting(activity1)
       const activity1MustWaitActivity2 = loss2 >= loss1
       if (activity1MustWaitActivity2) {
         const time = isWorking2 ? timeLeft2 : 0
-        return new Step(activity1, activity2.next(time), this.elapsedTime + time)
+        return new Step(this.cloneActivity(activity1), activity2.next(time), this.elapsedTime + time)
       } else {
         const time = isWorking1 ? timeLeft1 : 0
-        return new Step(activity1.next(time), activity2, this.elapsedTime + time)
+        return new Step(activity1.next(time), this.cloneActivity(activity2), this.elapsedTime + time)
       }
     }
     const { shorterTimeLeft } = this
@@ -38,6 +39,10 @@ export class Step {
       activity2.next(shorterTimeLeft),
       this.elapsedTime + shorterTimeLeft,
     )
+  }
+
+  cloneActivity({ worker, type, timeLeft }) {
+    return new Activity(worker, type, timeLeft)
   }
 
   print() {

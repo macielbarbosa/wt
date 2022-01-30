@@ -14,9 +14,8 @@ export class BedRotation {
   }
 
   run = () => {
-    let i = 25
-    while (i--) {
-      /* while (!this.isFinished) { */
+    let maxIteration = 100
+    while (!this.isFinished && maxIteration--) {
       this.currentStep = this.currentStep.next()
       this.steps.push(this.currentStep)
     }
