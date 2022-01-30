@@ -58,4 +58,8 @@ export class Activity {
   get isResting() {
     return this.type === activities.resting
   }
+
+  get isWorking() {
+    return this.type === activities.working
+  }
 }

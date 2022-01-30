@@ -10,16 +10,18 @@ export class BedRotation {
     const activity2 = new Activity(worker2, activities.idle)
     this.currentStep = new Step(activity1, activity2)
     this.steps = [this.currentStep]
-    this.makeSteps()
+    this.run()
   }
 
-  makeSteps = () => {
-    let i = 10
-    while (/* i-- */ !this.isFinished) {
+  run = () => {
+    let i = 25
+    while (i--) {
+      /* while (!this.isFinished) { */
       this.currentStep = this.currentStep.next()
       this.steps.push(this.currentStep)
     }
     this.cycle = this.currentStep.elapsedTime - this.currentStep.activity1.worker.workingHours
+
     this.print()
   }
 

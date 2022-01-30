@@ -7,71 +7,37 @@ export class Step {
     this.activity2 = activity2
   }
 
-  newStep(...params) {
-    const elapsedTime = this.elapsedTime + this.shorterTimeLeft
-    return new Step(...params, elapsedTime)
-  }
-
-  nextActivity(activity) {
-    return activity.next(this.shorterTimeLeft)
-  }
-
   next() {
+    const {
+      activity1,
+      activity2,
+      activity1: { timeLeft: timeLeft1, isResting: isResting1, isWorking: isWorking1 },
+      activity2: { timeLeft: timeLeft2, isResting: isResting2, isWorking: isWorking2 },
+    } = this
     if (this.hasExhausted) {
-      if (this.activity1.isResting) {
-        return this.advanceActivity1()
+      if (isResting1) {
+        return new Step(activity1.next(timeLeft1), activity2, this.elapsedTime + timeLeft1)
       }
-      if (this.activity2.isResting) {
-        return this.advanceActivity2()
+      if (isResting2) {
+        return new Step(activity1, activity2.next(timeLeft2), this.elapsedTime + timeLeft2)
       }
-      const loss1 = this.activity1.setLossWaiting(this.activity2)
-      const loss2 = this.activity2.setLossWaiting(this.activity1)
+      const loss1 = activity1.setLossWaiting(activity2)
+      const loss2 = activity2.setLossWaiting(activity1)
       const activity1MustWaitActivity2 = loss2 >= loss1
       if (activity1MustWaitActivity2) {
-        return this.advanceActivity2()
+        const time = isWorking2 ? timeLeft2 : 0
+        return new Step(activity1, activity2.next(time), this.elapsedTime + time)
       } else {
-        return this.advanceActivity1()
+        const time = isWorking1 ? timeLeft1 : 0
+        return new Step(activity1.next(time), activity2, this.elapsedTime + time)
       }
     }
-    return this.advanceBothActivities()
-  }
-
-  advanceActivity1() {
-    return this.newStep(this.nextActivity(this.activity1), this.activity2)
-  }
-
-  advanceActivity2() {
-    return this.newStep(this.activity1, this.nextActivity(this.activity2))
-  }
-
-  advanceBothActivities() {
-    return this.newStep(this.nextActivity(this.activity1), this.nextActivity(this.activity2))
-  }
-
-  get hasExhausted() {
-    return this.activity1.isExhausted || this.activity2.isExhausted
-  }
-
-  get hasResting() {
-    return this.activity1.isResting || this.activity2.isResting
-  }
-
-  get restingActivity() {
-    return this.activity1.isResting ? this.activity1 : this.activity2
-  }
-
-  get shorterTimeLeft() {
-    const {
-      activity1: { timeLeft: timeLeftActivity1 },
-      activity2: { type: typeActivity2, timeLeft: timeLeftActivity2 },
-    } = this
-    if (typeActivity2 === activities.idle) {
-      return timeLeftActivity1
-    }
-    if (this.hasExhausted && this.hasResting) {
-      return this.restingActivity.timeLeft
-    }
-    return timeLeftActivity1 < timeLeftActivity2 ? timeLeftActivity1 : timeLeftActivity2
+    const { shorterTimeLeft } = this
+    return new Step(
+      activity1.next(shorterTimeLeft),
+      activity2.next(shorterTimeLeft),
+      this.elapsedTime + shorterTimeLeft,
+    )
   }
 
   print() {
@@ -88,5 +54,20 @@ export class Step {
     if (this.hasExhausted && loss1 && loss2) {
       console.log(`${loss1} COINS -- Loss waiting -- ${loss2} COINS`)
     }
+  }
+
+  get shorterTimeLeft() {
+    const {
+      activity1: { timeLeft: timeLeft1 },
+      activity2: { type: type2, timeLeft: timeLeft2 },
+    } = this
+    if (type2 === activities.idle) {
+      return timeLeft1
+    }
+    return timeLeft1 < timeLeft2 ? timeLeft1 : timeLeft2
+  }
+
+  get hasExhausted() {
+    return this.activity1.isExhausted || this.activity2.isExhausted
   }
 }

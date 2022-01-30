@@ -5,7 +5,7 @@ const higherSalary = (w1, w2) => w2.workingReward / w2.workingHours - w1.working
 
 export const traceStrategy = (workers, houses) => {
   console.clear()
-  const bedRotation1 = new BedRotation(
+  /*const bedRotation1 = new BedRotation(
     {
       workerClass: 'Miner',
       gender: 'Male',
@@ -22,7 +22,7 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 18,
       emblem: 'Union',
     },
-  )
+  ) */
   /* const bedRotation2 = new BedRotation(
     {
       workerClass: 'Builder',
@@ -58,7 +58,7 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 18,
       emblem: 'Union',
     },
-  )
+  )*/
   const bedRotation4 = new BedRotation(
     {
       workerClass: 'Old',
@@ -76,7 +76,7 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 6,
       emblem: 'Villain',
     },
-  ) */
+  )
   /* workers = workers.sort(higherSalary)
 
   const housesEmblems = houses.slice(1).map((house) => house.emblem)
