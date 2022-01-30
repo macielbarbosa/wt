@@ -14,8 +14,8 @@ export class BedRotation {
   }
 
   makeSteps = () => {
-    let i = 3 // parei passo tres falhando
-    while (i-- /* !this.isFinished */) {
+    let i = 10
+    while (/* i-- */ !this.isFinished) {
       this.currentStep = this.currentStep.next()
       this.steps.push(this.currentStep)
     }
@@ -54,11 +54,11 @@ export class BedRotation {
       elapsedTime,
     } = this.currentStep
     return (
-      elapsedTime > workingHours1 &&
       timeLeftActivity1 === workingHours1 &&
       typeActivity1 === activities.resting &&
-      timeLeftActivity2 === workingHours2 &&
-      typeActivity2 === activities.working
+      elapsedTime > workingHours1 &&
+      typeActivity2 === activities.working &&
+      timeLeftActivity2 === workingHours2
     )
   }
 }

@@ -5,6 +5,7 @@ export class Activity {
     this.worker = worker
     this.type = type
     this.timeLeft = timeLeft
+    this.lossWaiting = null
   }
 
   newActivity = (...params) => new Activity(this.worker, ...params)
@@ -44,16 +45,10 @@ export class Activity {
     }
   }
 
-  coinsLostForWaiting(activity) {
+  setLossWaiting(activity) {
     const { workingReward, workingHours } = activity.worker
-    return (activity.timeToFinishRest * workingReward) / workingHours
-  }
-
-  mustWaitForActivityToRest(activity) {
-    return (
-      activity.isResting ||
-      (this.isExhausted && this.coinsLostForWaiting(activity) < activity.coinsLostForWaiting(this))
-    )
+    this.lossWaiting = (activity.timeToFinishRest * workingReward) / workingHours
+    return this.lossWaiting
   }
 
   get isExhausted() {
