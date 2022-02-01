@@ -46,7 +46,7 @@ export class Activity {
   }
 
   setLossWaiting(activity) {
-    const { workingReward, workingHours } = activity.worker
+    const { workingReward, workingHours } = this.worker
     this.lossWaiting = (activity.timeToFinishRest * workingReward) / workingHours
     return this.lossWaiting
   }

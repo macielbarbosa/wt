@@ -5,15 +5,23 @@ const higherSalary = (w1, w2) => w2.workingReward / w2.workingHours - w1.working
 
 export const traceStrategy = (workers, houses) => {
   console.clear()
-  /*const bedRotation1 = new BedRotation(
-    {
-      workerClass: 'Miner',
+  const bedRotation = new BedRotation(
+    /* {
+      workerClass: 'Bandit',
       gender: 'Male',
-      rarity: 'Uncommon',
-      workingReward: 72,
+      rarity: 'Common',
+      workingReward: 24,
+      workingHours: 6,
+      emblem: 'Villain',
+    }, */
+    /*  {
+      workerClass: 'Villager',
+      gender: 'Female',
+      rarity: 'Common',
+      workingReward: 48,
       workingHours: 12,
-      emblem: 'Union',
-    },
+      emblem: 'Citizen',
+    }, */
     {
       workerClass: 'Fisherman',
       gender: 'Male',
@@ -22,8 +30,6 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 18,
       emblem: 'Union',
     },
-  ) */
-  /* const bedRotation2 = new BedRotation(
     {
       workerClass: 'Builder',
       gender: 'Male',
@@ -32,51 +38,48 @@ export const traceStrategy = (workers, houses) => {
       workingHours: 24,
       emblem: 'Union',
     },
-    {
-      workerClass: 'Fisherman',
+    /* {
+      workerClass: 'Inn Keeper',
       gender: 'Male',
-      rarity: 'Uncommon',
-      workingReward: 108,
-      workingHours: 18,
-      emblem: 'Union',
-    },
-  ) */
-  /* const bedRotation3 = new BedRotation(
-    {
+      rarity: 'Common',
+      workingReward: 96,
+      workingHours: 24,
+      emblem: 'Citizen',
+    }, */
+    /* {
+      workerClass: 'Young',
+      gender: 'Male',
+      rarity: 'Common',
+      workingReward: 144,
+      workingHours: 36,
+      emblem: 'Citizen',
+    }, */
+    /* {
+      workerClass: 'Queen',
+      gender: 'Female',
+      rarity: 'Legendary',
+      workingReward: 672,
+      workingHours: 24,
+      emblem: 'Royal',
+    }, */
+    /* {
       workerClass: 'Pirate',
       gender: 'Male',
       rarity: 'Common',
       workingReward: 192,
       workingHours: 48,
       emblem: 'Villain',
-    },
-    {
-      workerClass: 'Fisherman',
-      gender: 'Male',
-      rarity: 'Uncommon',
-      workingReward: 108,
-      workingHours: 18,
-      emblem: 'Union',
-    },
-  )*/
-  const bedRotation4 = new BedRotation(
-    {
+    }, */
+    /* {
       workerClass: 'Old',
       gender: 'Male',
       rarity: 'Common',
       workingReward: 288,
       workingHours: 72,
       emblem: 'Citizen',
-    },
-    {
-      workerClass: 'Bandit',
-      gender: 'Male',
-      rarity: 'Common',
-      workingReward: 24,
-      workingHours: 6,
-      emblem: 'Villain',
-    },
+    },*/
   )
+  bedRotation.print()
   /* workers = workers.sort(higherSalary)
 
   const housesEmblems = houses.slice(1).map((house) => house.emblem)

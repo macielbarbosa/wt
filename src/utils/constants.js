@@ -26,9 +26,21 @@ export const rarities = Object.freeze({
 })
 
 export const beds = Object.freeze({
-  regular: 'Regular Bed',
-  luxury: 'Luxury Bed',
-  legendaryRoyal: 'Legendary Royal Bed',
+  regular: {
+    name: 'Regular Bed',
+    price: 135,
+    hours: 74,
+  },
+  luxury: {
+    name: 'Luxury Bed',
+    price: 250,
+    hours: 148,
+  },
+  legendaryRoyal: {
+    name: 'Legendary Royal Bed',
+    price: 350,
+    hours: 222,
+  },
 })
 
 export const genders = Object.freeze({

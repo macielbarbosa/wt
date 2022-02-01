@@ -6,22 +6,42 @@ export class Step {
     this.elapsedTime = elapsedTime
     this.activity1 = activity1
     this.activity2 = activity2
+    this.hasLossAnalisys = false
   }
 
   next() {
     const {
       activity1,
       activity2,
-      activity1: { timeLeft: timeLeft1, isResting: isResting1, isWorking: isWorking1 },
-      activity2: { timeLeft: timeLeft2, isResting: isResting2, isWorking: isWorking2 },
+      activity1: {
+        timeLeft: timeLeft1,
+        isResting: isResting1,
+        isExhausted: isExhausted1,
+        isWorking: isWorking1,
+        worker: { workingHours: workingHours1 },
+      },
+      activity2: {
+        timeLeft: timeLeft2,
+        isResting: isResting2,
+        isExhausted: isExhausted2,
+        isWorking: isWorking2,
+        worker: { workingHours: workingHours2 },
+      },
     } = this
     if (this.hasExhausted) {
+      if (isExhausted1 && isWorking2 && timeLeft2 >= workingHours1) {
+        return new Step(activity1.next(timeLeft1), this.cloneActivity(activity2), this.elapsedTime)
+      }
+      if (isExhausted2 && isWorking1 && timeLeft1 >= workingHours2) {
+        return new Step(this.cloneActivity(activity1), activity2.next(timeLeft1), this.elapsedTime)
+      }
       if (isResting1) {
         return new Step(activity1.next(timeLeft1), this.cloneActivity(activity2), this.elapsedTime + timeLeft1)
       }
       if (isResting2) {
         return new Step(this.cloneActivity(activity1), activity2.next(timeLeft2), this.elapsedTime + timeLeft2)
       }
+      this.hasLossAnalisys = true
       const loss1 = activity1.setLossWaiting(activity2)
       const loss2 = activity2.setLossWaiting(activity1)
       const activity1MustWaitActivity2 = loss2 >= loss1
@@ -56,7 +76,7 @@ export class Step {
       `${type1} ------ ${elapsedTime}h ------ ${type2}`,
       Boolean(timeLeft2) ? `- ${timeLeft2}h` : '',
     )
-    if (this.hasExhausted && loss1 && loss2) {
+    if (this.hasLossAnalisys) {
       console.log(`${loss1} COINS -- Loss waiting -- ${loss2} COINS`)
     }
   }
