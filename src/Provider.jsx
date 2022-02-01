@@ -4,7 +4,7 @@ import { compose } from 'redux'
 import { Context } from './context'
 import { defaultFreeHouse } from './utils/constants'
 import localStorage from './utils/localStorage'
-import { traceStrategy } from './utils/traceStrategy'
+import { Strategy } from './utils/Strategy/'
 
 class ProviderComponent extends Component {
   constructor(props) {
@@ -14,7 +14,6 @@ class ProviderComponent extends Component {
       workers: localStorage.upsertItem('workers', []),
       strategy: localStorage.upsertItem('strategy', { coinsPerDay: 0 }),
     }
-    this.onSet('workers')()
   }
 
   set = (state) => {
@@ -27,7 +26,8 @@ class ProviderComponent extends Component {
     const mustUpdateStrategy = ['houses', 'workers'].includes(property)
     if (mustUpdateStrategy) {
       const { workers, houses } = this.state
-      this.set({ strategy: traceStrategy(workers, houses) })
+      console.clear()
+      this.set({ strategy: new Strategy(workers, houses) })
     }
   }
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled } from '@mui/system'
+// import { styled } from '@mui/system'
 
 import { getWorkerMetadata } from '../utils/getWorkerMetadata'
 import { NftPaper /* as CommonNftPaper */ } from 'common/NftPaper'
