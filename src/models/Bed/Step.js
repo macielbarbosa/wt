@@ -1,4 +1,4 @@
-import { activities } from '../constants'
+import { activities } from '../../utils/constants'
 import { Activity } from './Activity'
 
 export class Step {

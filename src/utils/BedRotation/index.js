@@ -1,1 +1,0 @@
-export { BedRotation } from './BedRotation'

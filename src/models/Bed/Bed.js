@@ -1,20 +1,20 @@
-import { activities, beds } from '../constants'
+import { activities, beds } from '../../utils/constants'
 import { Activity } from './Activity'
 import { Step } from './Step'
 
-export class BedRotation {
+export class Bed {
   constructor(worker1, worker2) {
     const worker2HasLessWorkingHours = worker2.workingHours < worker1.workingHours
     if (worker2HasLessWorkingHours) [worker1, worker2] = [worker2, worker1]
     this.worker1 = worker1
     this.worker2 = worker2
-    this.isViable = this.checkViability()
-    if (this.isViable) {
+    this.isProfitable = this.checkViability()
+    if (this.isProfitable) {
       const activity1 = new Activity(worker1, activities.exhausted)
       const activity2 = new Activity(worker2, activities.working, worker2.workingHours)
       this.currentStep = new Step(activity1, activity2)
       this.steps = [this.currentStep]
-      this.run()
+      this.simulate()
     }
   }
 
@@ -26,7 +26,7 @@ export class BedRotation {
     return (h2 * r1) / h1 <= (2 * h1 * r2) / h2
   }
 
-  run = () => {
+  simulate = () => {
     let maxIteration = 50
     while (!this.isFinished && maxIteration--) {
       this.currentStep = this.currentStep.next()
@@ -58,7 +58,7 @@ export class BedRotation {
       worker2: { workerClass: workerClass2 },
     } = this
     console.log(`------ BED ROTATION [${workerClass1}-${workerClass2}] ------`)
-    if (!this.isViable) {
+    if (!this.isProfitable) {
       console.log('Not viable. Send only', workerClass1, 'to work.')
       return
     }

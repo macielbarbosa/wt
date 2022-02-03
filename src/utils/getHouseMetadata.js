@@ -10,4 +10,4 @@ const houseDictionary = Object.freeze({
   [rarities.unique]: { capacity: 25 },
 })
 
-export const getHouseMetadata = (metadata) => ({ ...houseDictionary[metadata] })
+export const getHouseMetadata = (metadata) => houseDictionary[metadata]

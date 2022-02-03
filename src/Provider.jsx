@@ -1,18 +1,25 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import { compose } from 'redux'
+
 import { Context } from './context'
-import { defaultFreeHouse } from './utils/constants'
+import { tiers } from './utils/constants'
 import localStorage from './utils/localStorage'
-import { Strategy } from './utils/Strategy/'
+import { Strategy } from './models/Strategy'
+import { House } from 'models/House'
+import { Worker } from 'models/Worker'
 
 class ProviderComponent extends Component {
   constructor(props) {
     super(props)
+    const housesData = localStorage.upsertItem('houses', [new House(tiers.tier1)])
+    const workersData = localStorage.upsertItem('workers', [])
+    const houses = housesData.map(({ rarity, emblem }) => new House(rarity, emblem))
+    const workers = workersData.map(({ workerClass, gender }) => new Worker(workerClass, gender))
     this.state = {
-      houses: localStorage.upsertItem('houses', [defaultFreeHouse]),
-      workers: localStorage.upsertItem('workers', []),
-      strategy: localStorage.upsertItem('strategy', { coinsPerDay: 0 }),
+      houses,
+      workers,
+      strategy: new Strategy(workers, houses),
     }
   }
 

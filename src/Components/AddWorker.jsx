@@ -10,7 +10,7 @@ import { Centered } from 'common/Centered'
 import { Paper } from 'common/Paper'
 import { Selector } from 'common/Selector'
 import { genders, workerClasses } from '../utils/constants'
-import { getWorkerMetadata } from '../utils/getWorkerMetadata'
+import { Worker } from 'models/Worker'
 
 const OpenButton = styled(Button)({
   width: '100%',
@@ -25,15 +25,15 @@ export const AddWorker = () => {
   const [amount, setAmount] = useState(1)
 
   const addWorker = () => {
-    const workerToAdd = { ...worker, ...getWorkerMetadata(worker.workerClass) }
-    set({ workers: [...Array.from({ length: amount }, () => workerToAdd), ...workers] })
+    const { workerClass, gender } = worker
+    set({ workers: [...Array.from({ length: amount }, () => new Worker(workerClass, gender)), ...workers] })
     setAmount(1)
     setOpen(false)
     setWorker(null)
   }
 
   return (
-    <Paper withPadding={open} style={{ width: 250 }}>
+    <Paper style={{ width: 250, padding: open ? 20 : 0 }}>
       {open ? (
         <Fragment>
           <Typography variant="h6">{strings.addWorker}</Typography>

@@ -104,10 +104,6 @@ export const multipleGenders = [
   workerClasses.necromancer,
   workerClasses.plagueDoctor,
 ]
-export const defaultFreeHouse = {
-  rarity: tiers.tier1,
-  capacity: 2,
-}
 
 export const activities = Object.freeze({
   idle: 'Idle',

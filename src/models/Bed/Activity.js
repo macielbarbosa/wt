@@ -1,4 +1,4 @@
-import { activities } from '../constants'
+import { activities } from '../../utils/constants'
 
 export class Activity {
   constructor(worker, type, timeLeft = 0) {
