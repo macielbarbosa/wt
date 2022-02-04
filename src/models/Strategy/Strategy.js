@@ -1,6 +1,6 @@
-// import { Bed } from '../Bed/index'
 import { emblems /* , workHours, workingHoursList */ } from '../../utils/constants'
 import { uniqueItems } from 'utils/uniqueItems'
+import { Bed } from 'models/Bed'
 
 export class Strategy {
   constructor(workers, houses) {
@@ -22,13 +22,10 @@ export class Strategy {
     const workersWithoutEmblem = this.workers.filter((worker) => !this.emblems.includes(worker.emblem))
     this.freeHouse.addLobby(workersWithoutEmblem)
 
-    this.makePerfectBedsEmblem()
+    // this.makePerfectBedsEmblem()
     // console.log('-----------------------------')
     this.makePerfectBedsNoEmblem()
     // console.log('-----------------------------')
-    this.makePerfectBedsNoEmblem()
-    // console.log('-----------------------------')
-
     console.log('houses', this.houses)
     this.coinsPerDay = 1
   }
@@ -56,8 +53,10 @@ export class Strategy {
         }
         if (worker2) {
           // console.log('bed [', worker1.workerClass, '-', worker2.workerClass, ']')
+          house.addBed(new Bed(worker1, worker2))
         } else if (worker1.workingHours === 72) {
           // console.log('cama solitaria')
+          house.addBed(new Bed(worker1))
         } else {
           notMatched.push(worker1)
         }
@@ -79,8 +78,10 @@ export class Strategy {
       let worker2 = this.freeHouse.nextWorker(worker1.workingHours)
       if (worker2) {
         // console.log('bed [', worker1.workerClass, '-', worker2.workerClass, ']')
+        this.freeHouse.addBed(new Bed(worker1, worker2))
       } else if (worker1.workingHours === 72) {
         // console.log('cama solitaria')
+        this.freeHouse.addBed(new Bed(worker1))
       } else {
         notMatched.push(worker1)
       }

@@ -1,24 +1,46 @@
+import { bedToLonely, bestRating, costPerDay } from 'utils/bed'
 import { activities, beds } from '../../utils/constants'
 import { Activity } from './Activity'
 import { Step } from './Step'
 
 export class Bed {
   constructor(worker1, worker2) {
-    const worker2HasLessWorkingHours = worker2.workingHours < worker1.workingHours
-    if (worker2HasLessWorkingHours) [worker1, worker2] = [worker2, worker1]
-    this.worker1 = worker1
-    this.worker2 = worker2
-    this.isProfitable = this.checkViability()
+    this.isLonely = !worker2
+    if (worker2) {
+      const worker2HasLessWorkingHours = worker2.workingHours < worker1.workingHours
+      if (worker2HasLessWorkingHours) [worker1, worker2] = [worker2, worker1]
+      this.worker1 = worker1
+      this.worker2 = worker2
+      this.makePair()
+    } else {
+      this.worker1 = worker1
+      this.makeLonely()
+    }
+    this.profitPerDay = this.isProfitable
+      ? Math.round((24 / this.cycle) * this.rewardPerCycle - costPerDay(this.type))
+      : 0
+  }
+
+  makePair() {
+    this.isProfitable = this.checkPairViability()
     if (this.isProfitable) {
-      const activity1 = new Activity(worker1, activities.exhausted)
-      const activity2 = new Activity(worker2, activities.working, worker2.workingHours)
+      const activity1 = new Activity(this.worker1, activities.exhausted)
+      const activity2 = new Activity(this.worker2, activities.working, this.worker2.workingHours)
       this.currentStep = new Step(activity1, activity2)
       this.steps = [this.currentStep]
       this.simulate()
     }
   }
 
-  checkViability() {
+  makeLonely() {
+    const { workingHours } = this.worker1
+    this.cycle = workingHours
+    this.type = bedToLonely(workingHours)
+    // checar isso
+    this.isProfitable = true
+  }
+
+  checkPairViability() {
     const {
       worker1: { workingHours: h1, workingReward: r1 },
       worker2: { workingHours: h2, workingReward: r2 },
@@ -32,24 +54,27 @@ export class Bed {
       this.currentStep = this.currentStep.next()
       this.steps.push(this.currentStep)
     }
-    this.cycle = this.currentStep.elapsedTime
+    const { elapsedTime } = this.currentStep
+    this.cycle = this.worker1.workingHours === this.worker2.workingHours ? elapsedTime / 2 : elapsedTime
     this.regularBed = this.usingBed(beds.regular)
     this.luxuryBed = this.usingBed(beds.luxury)
     this.legendaryRoyalBed = this.usingBed(beds.legendaryRoyal)
-    this.bed = [this.regularBed, this.luxuryBed, this.legendaryRoyalBed].sort((a, b) => b.rating - a.rating)[0]
+    this.type = bestRating([this.regularBed, this.luxuryBed, this.legendaryRoyalBed])
   }
 
-  usingBed({ name, price, hours }) {
-    const cyclesPerBed = Math.floor(hours / this.cycle)
-    return { name, cyclesPerBed, rating: (cyclesPerBed * this.rewardPerCycle) / price }
+  usingBed(bed) {
+    const { price, hours } = bed
+    const cycles = Math.floor(hours / this.cycle)
+    return { ...bed, cycles, rating: (cycles * this.rewardPerCycle) / price }
   }
 
   get rewardPerCycle() {
     const {
-      worker1: { workingReward: r1 },
-      worker2: { workingReward: r2 },
+      worker1: { workingReward: r1, workingHours: h1 },
     } = this
-    return (r1 + r2) * 0.95 - 0.8
+    const r2 = this.isLonely ? 0 : this.worker2.workingReward
+    const h2 = this.isLonely ? 0 : this.worker2.workingHours
+    return ((r1 + r2) * 0.95 - (this.isLonely ? 0.4 : 0.8)) / (h1 === h2 ? 2 : 1)
   }
 
   print() {

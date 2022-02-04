@@ -16,6 +16,10 @@ export class House {
     this.lobby.sort(higherSalary)
   }
 
+  addBed(bed) {
+    this.beds.push(bed)
+  }
+
   clearLobby() {
     this.lobby = []
   }
@@ -37,6 +41,10 @@ export class House {
   }
 
   get isFull() {
-    return this.beds.length === this.capacity
+    return this.beds.length >= this.capacity
+  }
+
+  get isSurplusBed() {
+    return this.beds.length > this.capacity
   }
 }
