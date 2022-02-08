@@ -64,7 +64,7 @@ export class Bed {
 
   usingBed(bed) {
     const { price, hours } = bed
-    const cycles = Math.floor(hours / this.cycle)
+    const cycles = Math.floor((hours - 2) / this.cycle)
     return { ...bed, cycles, rating: (cycles * this.rewardPerCycle) / price }
   }
 
@@ -75,6 +75,29 @@ export class Bed {
     const r2 = this.isLonely ? 0 : this.worker2.workingReward
     const h2 = this.isLonely ? 0 : this.worker2.workingHours
     return ((r1 + r2) * 0.95 - (this.isLonely ? 0.4 : 0.8)) / (h1 === h2 ? 2 : 1)
+  }
+
+  get isFinished() {
+    const {
+      activity1: {
+        type: typeActivity1,
+        timeLeft: timeLeftActivity1,
+        worker: { restingHours: restingHours1 },
+      },
+      activity2: {
+        type: typeActivity2,
+        timeLeft: timeLeftActivity2,
+        worker: { workingHours: workingHours2 },
+      },
+      elapsedTime,
+    } = this.currentStep
+    return (
+      timeLeftActivity1 === restingHours1 &&
+      typeActivity1 === activities.resting &&
+      elapsedTime > restingHours1 &&
+      typeActivity2 === activities.working &&
+      timeLeftActivity2 === workingHours2
+    )
   }
 
   print() {
@@ -91,29 +114,6 @@ export class Bed {
       step.print()
     })
     console.log(`Cycle = ${this.cycle}h`)
-    console.log('Bed = ', this.bed.name)
-  }
-
-  get isFinished() {
-    const {
-      activity1: {
-        type: typeActivity1,
-        timeLeft: timeLeftActivity1,
-        worker: { workingHours: workingHours1 },
-      },
-      activity2: {
-        type: typeActivity2,
-        timeLeft: timeLeftActivity2,
-        worker: { workingHours: workingHours2 },
-      },
-      elapsedTime,
-    } = this.currentStep
-    return (
-      timeLeftActivity1 === workingHours1 &&
-      typeActivity1 === activities.resting &&
-      elapsedTime > workingHours1 &&
-      typeActivity2 === activities.working &&
-      timeLeftActivity2 === workingHours2
-    )
+    console.log('Bed = ', this.type.name)
   }
 }

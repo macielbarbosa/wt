@@ -1,3 +1,4 @@
+import { Bed } from 'models/Bed'
 import { getHouseMetadata } from 'utils/getHouseMetadata'
 import { higherSalary } from 'utils/higherSalary'
 import { emblems } from '../../utils/constants'
@@ -9,6 +10,7 @@ export class House {
     this.capacity = getHouseMetadata(rarity).capacity
     this.lobby = []
     this.beds = []
+    this.hasEmblem = this.emblem !== emblems.noEmblem
   }
 
   addLobby(workers) {
@@ -16,12 +18,20 @@ export class House {
     this.lobby.sort(higherSalary)
   }
 
-  addBed(bed) {
-    this.beds.push(bed)
+  addBed(...workers) {
+    workers.forEach((worker) => {
+      worker.setEmblemBonus(worker.emblem === this.emblem)
+    })
+    this.beds.push(new Bed(...workers))
   }
 
   clearLobby() {
     this.lobby = []
+  }
+
+  clear() {
+    this.beds = []
+    this.clearLobby()
   }
 
   nextWorker(workingHours = false) {

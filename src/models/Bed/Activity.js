@@ -1,10 +1,11 @@
+import { round } from 'utils/general'
 import { activities } from '../../utils/constants'
 
 export class Activity {
   constructor(worker, type, timeLeft = 0) {
     this.worker = worker
     this.type = type
-    this.timeLeft = timeLeft
+    this.timeLeft = round(timeLeft)
     this.lossWaiting = null
   }
 
@@ -21,7 +22,7 @@ export class Activity {
         return this.newActivity(activities.working, this.timeLeft - time)
       }
       case activities.exhausted: {
-        return this.newActivity(activities.resting, this.worker.workingHours)
+        return this.newActivity(activities.resting, this.worker.restingHours)
       }
       case activities.resting: {
         if (this.timeLeft === time) {
@@ -37,7 +38,7 @@ export class Activity {
   get timeToFinishRest() {
     switch (this.type) {
       case activities.working:
-        return this.timeLeft + this.worker.workingHours
+        return this.timeLeft + this.worker.restingHours
       case activities.exhausted:
         return this.worker.workingHours
       default:

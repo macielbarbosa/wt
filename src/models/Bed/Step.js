@@ -1,3 +1,4 @@
+import { round } from 'utils/general'
 import { activities } from '../../utils/constants'
 import { Activity } from './Activity'
 
@@ -77,7 +78,7 @@ export class Step {
       Boolean(timeLeft2) ? `- ${timeLeft2}h` : '',
     )
     if (this.hasLossAnalisys) {
-      console.log(`${loss1} COINS -- Loss waiting -- ${loss2} COINS`)
+      console.log(`${round(loss1)} COINS -- Loss waiting -- ${round(loss2)} COINS`)
     }
   }
 
