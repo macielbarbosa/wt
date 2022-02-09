@@ -9,7 +9,9 @@ export class Activity {
     this.lossWaiting = null
   }
 
-  newActivity = (...params) => new Activity(this.worker, ...params)
+  newActivity(...params) {
+    return new Activity(this.worker, ...params)
+  }
 
   next(time = this.timeLeft) {
     switch (this.type) {

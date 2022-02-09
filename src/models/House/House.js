@@ -1,16 +1,17 @@
 import { Bed } from 'models/Bed'
 import { getHouseMetadata } from 'utils/getHouseMetadata'
 import { higherSalary } from 'utils/higherSalary'
-import { emblems } from '../../utils/constants'
+import { enumEmblems } from '../../utils/constants'
 
 export class House {
-  constructor(rarity, emblem = emblems.noEmblem) {
+  constructor(rarity, emblem = enumEmblems.noEmblem) {
     this.rarity = rarity
     this.emblem = emblem
     this.capacity = getHouseMetadata(rarity).capacity
     this.lobby = []
     this.beds = []
-    this.hasEmblem = this.emblem !== emblems.noEmblem
+    this.hasEmblem = this.emblem !== enumEmblems.noEmblem
+    this.isFree = this.capacity < 10
   }
 
   addLobby(workers) {
@@ -19,9 +20,11 @@ export class House {
   }
 
   addBed(...workers) {
-    workers.forEach((worker) => {
-      worker.setEmblemBonus(worker.emblem === this.emblem)
-    })
+    workers
+      .filter((worker) => Boolean(worker))
+      .forEach((worker) => {
+        worker.setEmblemBonus(worker.emblem === this.emblem)
+      })
     this.beds.push(new Bed(...workers))
   }
 

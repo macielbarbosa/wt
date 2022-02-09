@@ -5,7 +5,7 @@ import { NftPaper } from 'common/NftPaper'
 import { useStrings } from '../strings/context'
 import { CenteredRow } from 'common/CenteredRow'
 import { getNextArrayItem } from '../utils/getNextArrayItem'
-import { tiers, houseRarities, emblems } from '../utils/constants'
+import { tiers, houseRarities, enumEmblems } from '../utils/constants'
 
 export const House = ({ rarity, emblem, isFree, onDelete, onChangeRarity, onChangeEmblem, capacity }) => {
   const strings = useStrings()
@@ -16,14 +16,14 @@ export const House = ({ rarity, emblem, isFree, onDelete, onChangeRarity, onChan
   }
 
   const toggleEmblem = () => {
-    onChangeEmblem(getNextArrayItem(Object.values(emblems), emblem))
+    onChangeEmblem(getNextArrayItem(Object.values(enumEmblems), emblem))
   }
 
   return (
     <NftPaper onDelete={onDelete} nonDeletable={isFree}>
       {!isFree && (
         <CenteredRow>
-          <Button onClick={toggleEmblem}>{emblem !== emblems.empty ? emblem : 'No emblem'}</Button>
+          <Button onClick={toggleEmblem}>{emblem !== enumEmblems.noEmblem ? emblem : 'No emblem'}</Button>
         </CenteredRow>
       )}
       <br />

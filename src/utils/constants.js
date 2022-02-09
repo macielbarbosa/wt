@@ -1,4 +1,4 @@
-export const emblems = Object.freeze({
+export const enumEmblems = Object.freeze({
   noEmblem: 'No Emblem',
   royal: 'Royal',
   citizen: 'Citizen',

@@ -17,6 +17,10 @@ export class Worker {
     this.restingHours = withEmblemBonus ? round(this.workingHours * 0.85) : this.workingHours
   }
 
+  clone() {
+    return new Worker(this.workerClass, this.gender)
+  }
+
   get withEmblemBonus() {
     return this.restingHours === round(this.workingHours * 0.85)
   }
