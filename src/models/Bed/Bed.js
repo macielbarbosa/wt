@@ -1,4 +1,4 @@
-import { bedToLonely, bestRating, costPerDay } from 'utils/bed'
+import { bedToLonely, bestRating } from 'utils/bed'
 import { round } from 'utils/general'
 import { activities, beds } from '../../utils/constants'
 import { Activity } from './Activity'
@@ -18,13 +18,11 @@ export class Bed {
       this.worker1 = worker1
       this.makeLonely()
     }
-    this.profitPerDay = this.isProfitable
-      ? Math.round((24 / this.cycle) * this.rewardPerCycle - costPerDay(this.type))
-      : 0
   }
 
   makePair() {
     this.isProfitable = this.checkPairViability()
+    this.isSameWorkingHours = this.worker1.workingHours === this.worker2.workingHours
     if (this.isProfitable) {
       const activity1 = new Activity(this.worker1, activities.exhausted)
       const activity2 = new Activity(this.worker2, activities.working, this.worker2.workingHours)
@@ -41,10 +39,10 @@ export class Bed {
     const { workingHours } = this.worker1
     this.cycle = workingHours
     this.type = bedToLonely(workingHours)
-    // checar isso
     this.setRewardPerCycle()
     this.setProfitPerDay()
     this.isProfitable = this.profitPerDay > 0
+    this.steps = []
   }
 
   checkPairViability() {
@@ -62,7 +60,7 @@ export class Bed {
       this.steps.push(this.currentStep)
     }
     const { elapsedTime } = this.currentStep
-    this.cycle = this.worker1.workingHours === this.worker2.workingHours ? elapsedTime / 2 : elapsedTime
+    this.cycle = elapsedTime / (this.isSameWorkingHours ? 2 : 1)
   }
 
   chooseBed() {
@@ -74,25 +72,37 @@ export class Bed {
 
   usingBed(bed) {
     const { price, hours } = bed
-    const cycles = Math.floor((hours - 2) / this.cycle)
+    const cycles = Math.floor(hours / this.cycle)
     return { ...bed, cycles, rating: (cycles * this.rewardPerCycle) / price }
   }
 
   setRewardPerCycle() {
     const {
-      worker1: { workingReward: r1, workingHours: h1 },
+      worker1: { workingReward: r1, workingHours: h1, workerClass: workerClass1 },
     } = this
     const r2 = this.isLonely ? 0 : this.worker2.workingReward
     const h2 = this.isLonely ? 0 : this.worker2.workingHours
-    const result = ((r1 + r2) * 0.95 - (this.isLonely ? 0.4 : 0.8)) / (h1 === h2 || this.isLonely ? 2 : 1)
+    const workerClass2 = this.isLonely ? undefined : this.worker2.workerClass
+    const isSameWorker = workerClass1 === workerClass2
+    const result =
+      this.isLonely || isSameWorker
+        ? r1 * 0.95 - 0.4
+        : this.isSameWorkingHours
+        ? ((r1 + r2) / 2) * 0.95 - 0.4
+        : (r1 + r2) * 0.95 - 0.8
     this.rewardPerCycle = round(result)
   }
 
   setProfitPerDay() {
-    this.profitPerDay = Math.round((24 / this.cycle) * this.rewardPerCycle - costPerDay(this.type))
+    const totalReward = this.type.cycles * this.rewardPerCycle
+    const typeDays = this.type.hours / 24
+    const rewardPerDay = totalReward / typeDays
+    const costPerDay = this.type.price / typeDays
+    this.profitPerDay = Math.round(rewardPerDay - costPerDay)
   }
 
   get isFinished() {
+    if (this.isLonely) return true
     const {
       activity1: {
         type: typeActivity1,
@@ -118,8 +128,9 @@ export class Bed {
   print() {
     const {
       worker1: { workerClass: workerClass1 },
-      worker2: { workerClass: workerClass2 },
+      worker2,
     } = this
+    const workerClass2 = worker2 ? worker2.workerClass : 'Lonely'
     console.log(`------ BED ROTATION [${workerClass1}-${workerClass2}] ------`)
     if (!this.isProfitable) {
       console.log('Not profitable.')

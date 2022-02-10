@@ -14,7 +14,7 @@ export class House {
     this.isFree = this.capacity < 10
   }
 
-  addLobby(workers) {
+  addLobby(...workers) {
     this.lobby.push(...workers)
     this.lobby.sort(higherSalary)
   }
@@ -25,7 +25,11 @@ export class House {
       .forEach((worker) => {
         worker.setEmblemBonus(worker.emblem === this.emblem)
       })
-    this.beds.push(new Bed(...workers))
+    const bed = new Bed(...workers)
+    if (bed.isProfitable) {
+      this.beds.push(bed)
+    }
+    return bed.isProfitable
   }
 
   clearLobby() {

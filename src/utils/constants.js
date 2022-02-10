@@ -29,17 +29,17 @@ export const beds = Object.freeze({
   regular: {
     name: 'Regular Bed',
     price: 135,
-    hours: 74,
+    hours: 72,
   },
   luxury: {
     name: 'Luxury Bed',
     price: 250,
-    hours: 148,
+    hours: 144,
   },
   legendaryRoyal: {
     name: 'Legendary Royal Bed',
     price: 350,
-    hours: 222,
+    hours: 216,
   },
 })
 

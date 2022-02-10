@@ -19,17 +19,4 @@ export const bedToLonely = (workingHours) => {
   }
 }
 
-export const costPerDay = ({ name }) => {
-  switch (name) {
-    case beds.regular.name:
-      return beds.regular.price / 3
-    case beds.luxury.name:
-      return beds.luxury.price / 6
-    case beds.legendaryRoyal.name:
-      return beds.legendaryRoyal.price / 9
-    default:
-      return 0
-  }
-}
-
 export const bestRating = (beds) => beds.sort((a, b) => b.rating - a.rating)[0]
