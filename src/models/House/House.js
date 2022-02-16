@@ -7,7 +7,9 @@ export class House {
   constructor(rarity, emblem = enumEmblems.noEmblem) {
     this.rarity = rarity
     this.emblem = emblem
-    this.capacity = getHouseMetadata(rarity).capacity
+    const { capacity, image } = getHouseMetadata(rarity)
+    this.capacity = capacity
+    this.image = image
     this.lobby = []
     this.beds = []
     this.hasEmblem = this.emblem !== enumEmblems.noEmblem
@@ -23,7 +25,7 @@ export class House {
     workers
       .filter((worker) => Boolean(worker))
       .forEach((worker) => {
-        worker.setEmblemBonus(worker.emblem === this.emblem)
+        worker.setEmblemBonus(worker.emblem !== enumEmblems.noEmblem && worker.emblem === this.emblem)
       })
     const bed = new Bed(...workers)
     if (bed.isProfitable) {

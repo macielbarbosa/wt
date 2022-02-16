@@ -80,7 +80,7 @@ export const workerClasses = Object.freeze({
   knight: 'Knight',
   thief: 'Thief',
   rogue: 'Rogue',
-  paladin: 'Paladin',
+  //paladin: 'Paladin',
   santaClaus: 'Santa Claus',
   necromancer: 'Necromancer',
   plagueDoctor: 'Plague Doctor',
@@ -111,3 +111,11 @@ export const activities = Object.freeze({
   exhausted: 'Exhausted',
   resting: 'Resting',
 })
+
+export const ASSETS_URL = 'https://static.worker.town/assets/v1/'
+
+export const bedsImages = {
+  'Regular Bed': 'beds/regular.png',
+  'Luxury Bed': 'beds/luxury.png',
+  'Legendary Royal Bed': 'beds/royal.png',
+}

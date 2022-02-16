@@ -16,10 +16,11 @@ class ProviderComponent extends Component {
     const workersData = localStorage.upsertItem('workers', [])
     const houses = housesData.map(({ rarity, emblem }) => new House(rarity, emblem))
     const workers = workersData.map(({ workerClass, gender }) => new Worker(workerClass, gender))
+    const strategy = new Strategy(workers, houses)
     this.state = {
       houses,
       workers,
-      strategy: new Strategy(workers, houses),
+      strategy,
     }
   }
 
@@ -33,8 +34,8 @@ class ProviderComponent extends Component {
     const mustUpdateStrategy = ['houses', 'workers'].includes(property)
     if (mustUpdateStrategy) {
       const { workers, houses } = this.state
-      console.clear()
-      this.set({ strategy: new Strategy(workers, houses) })
+      const strategy = new Strategy(workers, houses)
+      this.set({ strategy })
     }
   }
 

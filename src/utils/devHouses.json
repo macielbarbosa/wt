@@ -1,0 +1,4735 @@
+[
+  {
+    "rarity": "Tier 1",
+    "image": "houses/free1.png",
+    "emblem": "No Emblem",
+    "capacity": 2,
+    "lobby": [
+      {
+        "workerClass": "Gladiator",
+        "gender": "Male",
+        "workingReward": 216,
+        "workingHours": 24,
+        "restingHours": 24,
+        "rarity": "Epic",
+        "emblem": "Protector"
+      },
+      {
+        "workerClass": "Blacksmith",
+        "gender": "Male",
+        "workingReward": 48,
+        "workingHours": 8,
+        "restingHours": 6.8,
+        "rarity": "Uncommon",
+        "emblem": "Protector"
+      },
+      {
+        "workerClass": "Pirate",
+        "gender": "Male",
+        "workingReward": 192,
+        "workingHours": 48,
+        "restingHours": 48,
+        "rarity": "Common",
+        "emblem": "Villain"
+      },
+      {
+        "workerClass": "Bandit",
+        "gender": "Male",
+        "workingReward": 24,
+        "workingHours": 6,
+        "restingHours": 5.1,
+        "rarity": "Common",
+        "emblem": "Villain"
+      }
+    ],
+    "beds": [
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Queen",
+          "gender": "Female",
+          "workingReward": 672,
+          "workingHours": 24,
+          "restingHours": 24,
+          "rarity": "Legendary",
+          "emblem": "Royal"
+        },
+        "worker2": {
+          "workerClass": "Queen",
+          "gender": "Female",
+          "workingReward": 672,
+          "workingHours": 24,
+          "restingHours": 24,
+          "rarity": "Legendary",
+          "emblem": "Royal"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 48,
+          "activity1": {
+            "worker": {
+              "workerClass": "Queen",
+              "gender": "Female",
+              "workingReward": 672,
+              "workingHours": 24,
+              "restingHours": 24,
+              "rarity": "Legendary",
+              "emblem": "Royal"
+            },
+            "type": "Resting",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Queen",
+              "gender": "Female",
+              "workingReward": 672,
+              "workingHours": 24,
+              "restingHours": 24,
+              "rarity": "Legendary",
+              "emblem": "Royal"
+            },
+            "type": "Working",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Queen",
+                "gender": "Female",
+                "workingReward": 672,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 24,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 3,
+          "rating": 14.177777777777777
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 6,
+          "rating": 15.312
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 16.405714285714286
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 16.405714285714286
+        },
+        "profitPerDay": 599
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "King",
+          "gender": "Male",
+          "workingReward": 624,
+          "workingHours": 24,
+          "restingHours": 24,
+          "rarity": "Legendary",
+          "emblem": "Royal"
+        },
+        "worker2": {
+          "workerClass": "Rogue",
+          "gender": "Male",
+          "workingReward": 432,
+          "workingHours": 24,
+          "restingHours": 24,
+          "rarity": "Unique",
+          "emblem": "Exile"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 48,
+          "activity1": {
+            "worker": {
+              "workerClass": "King",
+              "gender": "Male",
+              "workingReward": 624,
+              "workingHours": 24,
+              "restingHours": 24,
+              "rarity": "Legendary",
+              "emblem": "Royal"
+            },
+            "type": "Resting",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Rogue",
+              "gender": "Male",
+              "workingReward": 432,
+              "workingHours": 24,
+              "restingHours": 24,
+              "rarity": "Unique",
+              "emblem": "Exile"
+            },
+            "type": "Working",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "King",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Rogue",
+                "gender": "Male",
+                "workingReward": 432,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Unique",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "King",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Rogue",
+                "gender": "Male",
+                "workingReward": 432,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Unique",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "King",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Rogue",
+                "gender": "Male",
+                "workingReward": 432,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Unique",
+                "emblem": "Exile"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "King",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Rogue",
+                "gender": "Male",
+                "workingReward": 432,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Unique",
+                "emblem": "Exile"
+              },
+              "type": "Resting",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "King",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Rogue",
+                "gender": "Male",
+                "workingReward": 432,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Unique",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "King",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Rogue",
+                "gender": "Male",
+                "workingReward": 432,
+                "workingHours": 24,
+                "restingHours": 24,
+                "rarity": "Unique",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 24,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 3,
+          "rating": 11.137777777777776
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 6,
+          "rating": 12.028799999999999
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 12.888
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 12.888
+        },
+        "profitPerDay": 462
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Prince",
+          "gender": "Male",
+          "workingReward": 1056,
+          "workingHours": 48,
+          "restingHours": 48,
+          "rarity": "Legendary",
+          "emblem": "Royal"
+        },
+        "worker2": {
+          "workerClass": "Paladin",
+          "gender": "Male",
+          "workingReward": 864,
+          "workingHours": 48,
+          "restingHours": 48,
+          "rarity": "Unique",
+          "emblem": "Warrior"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 96,
+          "activity1": {
+            "worker": {
+              "workerClass": "Prince",
+              "gender": "Male",
+              "workingReward": 1056,
+              "workingHours": 48,
+              "restingHours": 48,
+              "rarity": "Legendary",
+              "emblem": "Royal"
+            },
+            "type": "Resting",
+            "timeLeft": 48,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Paladin",
+              "gender": "Male",
+              "workingReward": 864,
+              "workingHours": 48,
+              "restingHours": 48,
+              "rarity": "Unique",
+              "emblem": "Warrior"
+            },
+            "type": "Working",
+            "timeLeft": 48,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Prince",
+                "gender": "Male",
+                "workingReward": 1056,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Paladin",
+                "gender": "Male",
+                "workingReward": 864,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Prince",
+                "gender": "Male",
+                "workingReward": 1056,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Paladin",
+                "gender": "Male",
+                "workingReward": 864,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Prince",
+                "gender": "Male",
+                "workingReward": 1056,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Paladin",
+                "gender": "Male",
+                "workingReward": 864,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Prince",
+                "gender": "Male",
+                "workingReward": 1056,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Paladin",
+                "gender": "Male",
+                "workingReward": 864,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 96,
+            "activity1": {
+              "worker": {
+                "workerClass": "Prince",
+                "gender": "Male",
+                "workingReward": 1056,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Paladin",
+                "gender": "Male",
+                "workingReward": 864,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 96,
+            "activity1": {
+              "worker": {
+                "workerClass": "Prince",
+                "gender": "Male",
+                "workingReward": 1056,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Paladin",
+                "gender": "Male",
+                "workingReward": 864,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 48,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1,
+          "rating": 6.752592592592593
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 10.939200000000001
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 4,
+          "rating": 10.418285714285714
+        },
+        "type": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 10.939200000000001
+        },
+        "profitPerDay": 414
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Thief",
+          "gender": "Female",
+          "workingReward": 102,
+          "workingHours": 6,
+          "restingHours": 6,
+          "rarity": "Unique",
+          "emblem": "Exile"
+        },
+        "worker2": {
+          "workerClass": "Bandit",
+          "gender": "Male",
+          "workingReward": 24,
+          "workingHours": 6,
+          "restingHours": 6,
+          "rarity": "Common",
+          "emblem": "Villain"
+        },
+        "isProfitable": false,
+        "profitPerDay": 0
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Royal Guard",
+          "gender": "Male",
+          "workingReward": 720,
+          "workingHours": 48,
+          "restingHours": 48,
+          "rarity": "Unique",
+          "emblem": "Warrior"
+        },
+        "worker2": {
+          "workerClass": "Cult",
+          "gender": "Male",
+          "workingReward": 624,
+          "workingHours": 48,
+          "restingHours": 48,
+          "rarity": "Epic",
+          "emblem": "Exile"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 96,
+          "activity1": {
+            "worker": {
+              "workerClass": "Royal Guard",
+              "gender": "Male",
+              "workingReward": 720,
+              "workingHours": 48,
+              "restingHours": 48,
+              "rarity": "Unique",
+              "emblem": "Warrior"
+            },
+            "type": "Resting",
+            "timeLeft": 48,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Cult",
+              "gender": "Male",
+              "workingReward": 624,
+              "workingHours": 48,
+              "restingHours": 48,
+              "rarity": "Epic",
+              "emblem": "Exile"
+            },
+            "type": "Working",
+            "timeLeft": 48,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Royal Guard",
+                "gender": "Male",
+                "workingReward": 720,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Cult",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Royal Guard",
+                "gender": "Male",
+                "workingReward": 720,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Cult",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Royal Guard",
+                "gender": "Male",
+                "workingReward": 720,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Cult",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Royal Guard",
+                "gender": "Male",
+                "workingReward": 720,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Cult",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 96,
+            "activity1": {
+              "worker": {
+                "workerClass": "Royal Guard",
+                "gender": "Male",
+                "workingReward": 720,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Cult",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 96,
+            "activity1": {
+              "worker": {
+                "workerClass": "Royal Guard",
+                "gender": "Male",
+                "workingReward": 720,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Cult",
+                "gender": "Male",
+                "workingReward": 624,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 48,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1,
+          "rating": 4.725925925925926
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 7.656
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 4,
+          "rating": 7.291428571428572
+        },
+        "type": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 7.656
+        },
+        "profitPerDay": 277
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Ninja",
+          "gender": "Male",
+          "workingReward": 96,
+          "workingHours": 8,
+          "restingHours": 8,
+          "rarity": "Epic",
+          "emblem": "Exile"
+        },
+        "worker2": {
+          "workerClass": "Bandit Leader",
+          "gender": "Male",
+          "workingReward": 64,
+          "workingHours": 8,
+          "restingHours": 8,
+          "rarity": "Rare",
+          "emblem": "Villain"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 16,
+          "activity1": {
+            "worker": {
+              "workerClass": "Ninja",
+              "gender": "Male",
+              "workingReward": 96,
+              "workingHours": 8,
+              "restingHours": 8,
+              "rarity": "Epic",
+              "emblem": "Exile"
+            },
+            "type": "Resting",
+            "timeLeft": 8,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Bandit Leader",
+              "gender": "Male",
+              "workingReward": 64,
+              "workingHours": 8,
+              "restingHours": 8,
+              "rarity": "Rare",
+              "emblem": "Villain"
+            },
+            "type": "Working",
+            "timeLeft": 8,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Ninja",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bandit Leader",
+                "gender": "Male",
+                "workingReward": 64,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Rare",
+                "emblem": "Villain"
+              },
+              "type": "Working",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Ninja",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Resting",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bandit Leader",
+                "gender": "Male",
+                "workingReward": 64,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Rare",
+                "emblem": "Villain"
+              },
+              "type": "Working",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Ninja",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bandit Leader",
+                "gender": "Male",
+                "workingReward": 64,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Rare",
+                "emblem": "Villain"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Ninja",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Working",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bandit Leader",
+                "gender": "Male",
+                "workingReward": 64,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Rare",
+                "emblem": "Villain"
+              },
+              "type": "Resting",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 16,
+            "activity1": {
+              "worker": {
+                "workerClass": "Ninja",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bandit Leader",
+                "gender": "Male",
+                "workingReward": 64,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Rare",
+                "emblem": "Villain"
+              },
+              "type": "Working",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 16,
+            "activity1": {
+              "worker": {
+                "workerClass": "Ninja",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Epic",
+                "emblem": "Exile"
+              },
+              "type": "Resting",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bandit Leader",
+                "gender": "Male",
+                "workingReward": 64,
+                "workingHours": 8,
+                "restingHours": 8,
+                "rarity": "Rare",
+                "emblem": "Villain"
+              },
+              "type": "Working",
+              "timeLeft": 8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 8,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 9,
+          "rating": 5.04
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 18,
+          "rating": 5.4432
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 27,
+          "rating": 5.832
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 27,
+          "rating": 5.832
+        },
+        "profitPerDay": 188
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Pirate Leader",
+          "gender": "Male",
+          "workingReward": 792,
+          "workingHours": 72,
+          "restingHours": 72,
+          "rarity": "Epic",
+          "emblem": "Villain"
+        },
+        "worker2": {
+          "workerClass": "Archer",
+          "gender": "Female",
+          "workingReward": 576,
+          "workingHours": 72,
+          "restingHours": 72,
+          "rarity": "Rare",
+          "emblem": "Protector"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 144,
+          "activity1": {
+            "worker": {
+              "workerClass": "Pirate Leader",
+              "gender": "Male",
+              "workingReward": 792,
+              "workingHours": 72,
+              "restingHours": 72,
+              "rarity": "Epic",
+              "emblem": "Villain"
+            },
+            "type": "Resting",
+            "timeLeft": 72,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Archer",
+              "gender": "Female",
+              "workingReward": 576,
+              "workingHours": 72,
+              "restingHours": 72,
+              "rarity": "Rare",
+              "emblem": "Protector"
+            },
+            "type": "Working",
+            "timeLeft": 72,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Pirate Leader",
+                "gender": "Male",
+                "workingReward": 792,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Epic",
+                "emblem": "Villain"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Archer",
+                "gender": "Female",
+                "workingReward": 576,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Rare",
+                "emblem": "Protector"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Pirate Leader",
+                "gender": "Male",
+                "workingReward": 792,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Epic",
+                "emblem": "Villain"
+              },
+              "type": "Resting",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Archer",
+                "gender": "Female",
+                "workingReward": 576,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Rare",
+                "emblem": "Protector"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 72,
+            "activity1": {
+              "worker": {
+                "workerClass": "Pirate Leader",
+                "gender": "Male",
+                "workingReward": 792,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Epic",
+                "emblem": "Villain"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Archer",
+                "gender": "Female",
+                "workingReward": 576,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Rare",
+                "emblem": "Protector"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 72,
+            "activity1": {
+              "worker": {
+                "workerClass": "Pirate Leader",
+                "gender": "Male",
+                "workingReward": 792,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Epic",
+                "emblem": "Villain"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Archer",
+                "gender": "Female",
+                "workingReward": 576,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Rare",
+                "emblem": "Protector"
+              },
+              "type": "Resting",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 144,
+            "activity1": {
+              "worker": {
+                "workerClass": "Pirate Leader",
+                "gender": "Male",
+                "workingReward": 792,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Epic",
+                "emblem": "Villain"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Archer",
+                "gender": "Female",
+                "workingReward": 576,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Rare",
+                "emblem": "Protector"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 144,
+            "activity1": {
+              "worker": {
+                "workerClass": "Pirate Leader",
+                "gender": "Male",
+                "workingReward": 792,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Epic",
+                "emblem": "Villain"
+              },
+              "type": "Resting",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Archer",
+                "gender": "Female",
+                "workingReward": 576,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Rare",
+                "emblem": "Protector"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 72,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1,
+          "rating": 4.810370370370371
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 2,
+          "rating": 5.1952
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 3,
+          "rating": 5.566285714285714
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 3,
+          "rating": 5.566285714285714
+        },
+        "profitPerDay": 178
+      },
+      {
+        "isLonely": true,
+        "worker1": {
+          "workerClass": "Adventurer",
+          "gender": "Male",
+          "workingReward": 432,
+          "workingHours": 72,
+          "restingHours": 72,
+          "rarity": "Uncommon",
+          "emblem": "Protector"
+        },
+        "cycle": 72,
+        "type": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1
+        },
+        "isProfitable": true,
+        "profitPerDay": 92
+      }
+    ]
+  },
+  {
+    "rarity": "Common",
+    "image": "houses/common.png",
+    "emblem": "Enchanter",
+    "capacity": 10,
+    "lobby": [
+      {
+        "workerClass": "Priestess",
+        "gender": "Female",
+        "workingReward": 360,
+        "workingHours": 36,
+        "restingHours": 36,
+        "rarity": "Epic",
+        "emblem": "Enchanter"
+      }
+    ],
+    "beds": [
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Necromancer",
+          "gender": "Male",
+          "workingReward": 480,
+          "workingHours": 24,
+          "restingHours": 20.4,
+          "rarity": "Legendary",
+          "emblem": "Enchanter"
+        },
+        "worker2": {
+          "workerClass": "Alchemist",
+          "gender": "Male",
+          "workingReward": 336,
+          "workingHours": 24,
+          "restingHours": 20.4,
+          "rarity": "Unique",
+          "emblem": "Enchanter"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 44.4,
+          "activity1": {
+            "worker": {
+              "workerClass": "Necromancer",
+              "gender": "Male",
+              "workingReward": 480,
+              "workingHours": 24,
+              "restingHours": 20.4,
+              "rarity": "Legendary",
+              "emblem": "Enchanter"
+            },
+            "type": "Resting",
+            "timeLeft": 20.4,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Alchemist",
+              "gender": "Male",
+              "workingReward": 336,
+              "workingHours": 24,
+              "restingHours": 20.4,
+              "rarity": "Unique",
+              "emblem": "Enchanter"
+            },
+            "type": "Working",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 20.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 3.6,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 20.4,
+              "lossWaiting": 480
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 571.1999999999999
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 44.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 44.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Necromancer",
+                "gender": "Male",
+                "workingReward": 480,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Legendary",
+                "emblem": "Enchanter"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Alchemist",
+                "gender": "Male",
+                "workingReward": 336,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Unique",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 22.2,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 3,
+          "rating": 8.604444444444443
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 6,
+          "rating": 9.2928
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 9.956571428571428
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 9.956571428571428
+        },
+        "profitPerDay": 380
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Mage",
+          "gender": "Male",
+          "workingReward": 384,
+          "workingHours": 48,
+          "restingHours": 40.8,
+          "rarity": "Rare",
+          "emblem": "Enchanter"
+        },
+        "worker2": {
+          "workerClass": "Princess",
+          "gender": "Female",
+          "workingReward": 1104,
+          "workingHours": 48,
+          "restingHours": 48,
+          "rarity": "Legendary",
+          "emblem": "Royal"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 96,
+          "activity1": {
+            "worker": {
+              "workerClass": "Mage",
+              "gender": "Male",
+              "workingReward": 384,
+              "workingHours": 48,
+              "restingHours": 40.8,
+              "rarity": "Rare",
+              "emblem": "Enchanter"
+            },
+            "type": "Resting",
+            "timeLeft": 40.8,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Princess",
+              "gender": "Female",
+              "workingReward": 1104,
+              "workingHours": 48,
+              "restingHours": 48,
+              "rarity": "Legendary",
+              "emblem": "Royal"
+            },
+            "type": "Working",
+            "timeLeft": 48,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Resting",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 40.8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 7.2,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 40.8,
+              "lossWaiting": 384
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 1876.8
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Working",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 88.8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Resting",
+              "timeLeft": 7.2,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 96,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 96,
+            "activity1": {
+              "worker": {
+                "workerClass": "Mage",
+                "gender": "Male",
+                "workingReward": 384,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Rare",
+                "emblem": "Enchanter"
+              },
+              "type": "Resting",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Princess",
+                "gender": "Female",
+                "workingReward": 1104,
+                "workingHours": 48,
+                "restingHours": 48,
+                "rarity": "Legendary",
+                "emblem": "Royal"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 48,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1,
+          "rating": 5.232592592592592
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 8.476799999999999
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 4,
+          "rating": 8.073142857142857
+        },
+        "type": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 8.476799999999999
+        },
+        "profitPerDay": 312
+      }
+    ]
+  },
+  {
+    "rarity": "Common",
+    "image": "houses/common.png",
+    "emblem": "Citizen",
+    "capacity": 10,
+    "lobby": [
+      {
+        "workerClass": "Young",
+        "gender": "Male",
+        "workingReward": 144,
+        "workingHours": 36,
+        "restingHours": 36,
+        "rarity": "Common",
+        "emblem": "Citizen"
+      }
+    ],
+    "beds": [
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Bard",
+          "gender": "Female",
+          "workingReward": 96,
+          "workingHours": 12,
+          "restingHours": 10.2,
+          "rarity": "Rare",
+          "emblem": "Citizen"
+        },
+        "worker2": {
+          "workerClass": "Bard",
+          "gender": "Female",
+          "workingReward": 96,
+          "workingHours": 12,
+          "restingHours": 10.2,
+          "rarity": "Rare",
+          "emblem": "Citizen"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 22.2,
+          "activity1": {
+            "worker": {
+              "workerClass": "Bard",
+              "gender": "Female",
+              "workingReward": 96,
+              "workingHours": 12,
+              "restingHours": 10.2,
+              "rarity": "Rare",
+              "emblem": "Citizen"
+            },
+            "type": "Resting",
+            "timeLeft": 10.2,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Bard",
+              "gender": "Female",
+              "workingReward": 96,
+              "workingHours": 12,
+              "restingHours": 10.2,
+              "rarity": "Rare",
+              "emblem": "Citizen"
+            },
+            "type": "Working",
+            "timeLeft": 12,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 10.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 1.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 12,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 10.2,
+              "lossWaiting": 96
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 163.2
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 12,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 22.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 22.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 11.1,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 6,
+          "rating": 4.035555555555555
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 13,
+          "rating": 4.7216
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 19,
+          "rating": 4.929142857142856
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 19,
+          "rating": 4.929142857142856
+        },
+        "profitPerDay": 157
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Bard",
+          "gender": "Female",
+          "workingReward": 96,
+          "workingHours": 12,
+          "restingHours": 10.2,
+          "rarity": "Rare",
+          "emblem": "Citizen"
+        },
+        "worker2": {
+          "workerClass": "Plague Doctor",
+          "gender": "Male",
+          "workingReward": 252,
+          "workingHours": 12,
+          "restingHours": 12,
+          "rarity": "Legendary",
+          "emblem": "Warrior"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 24,
+          "activity1": {
+            "worker": {
+              "workerClass": "Bard",
+              "gender": "Female",
+              "workingReward": 96,
+              "workingHours": 12,
+              "restingHours": 10.2,
+              "rarity": "Rare",
+              "emblem": "Citizen"
+            },
+            "type": "Resting",
+            "timeLeft": 10.2,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Plague Doctor",
+              "gender": "Male",
+              "workingReward": 252,
+              "workingHours": 12,
+              "restingHours": 12,
+              "rarity": "Legendary",
+              "emblem": "Warrior"
+            },
+            "type": "Working",
+            "timeLeft": 12,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 10.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 1.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 12,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 10.2,
+              "lossWaiting": 96
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 428.3999999999999
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 12,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 22.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 1.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Bard",
+                "gender": "Female",
+                "workingReward": 96,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Rare",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Plague Doctor",
+                "gender": "Male",
+                "workingReward": 252,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Legendary",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 12,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 6,
+          "rating": 7.328888888888888
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 12,
+          "rating": 7.915199999999999
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 18,
+          "rating": 8.480571428571428
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 18,
+          "rating": 8.480571428571428
+        },
+        "profitPerDay": 291
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Inn Keeper",
+          "gender": "Male",
+          "workingReward": 96,
+          "workingHours": 24,
+          "restingHours": 20.4,
+          "rarity": "Common",
+          "emblem": "Citizen"
+        },
+        "worker2": {
+          "workerClass": "Inn Keeper",
+          "gender": "Male",
+          "workingReward": 96,
+          "workingHours": 24,
+          "restingHours": 20.4,
+          "rarity": "Common",
+          "emblem": "Citizen"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 44.4,
+          "activity1": {
+            "worker": {
+              "workerClass": "Inn Keeper",
+              "gender": "Male",
+              "workingReward": 96,
+              "workingHours": 24,
+              "restingHours": 20.4,
+              "rarity": "Common",
+              "emblem": "Citizen"
+            },
+            "type": "Resting",
+            "timeLeft": 20.4,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Inn Keeper",
+              "gender": "Male",
+              "workingReward": 96,
+              "workingHours": 24,
+              "restingHours": 20.4,
+              "rarity": "Common",
+              "emblem": "Citizen"
+            },
+            "type": "Working",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 20.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 3.6,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 20.4,
+              "lossWaiting": 96
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 163.2
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 44.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 44.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Inn Keeper",
+                "gender": "Male",
+                "workingReward": 96,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 22.2,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 3,
+          "rating": 2.0177777777777774
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 6,
+          "rating": 2.1792
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 2.3348571428571425
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 2.3348571428571425
+        },
+        "profitPerDay": 59
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Old",
+          "gender": "Male",
+          "workingReward": 288,
+          "workingHours": 72,
+          "restingHours": 61.2,
+          "rarity": "Common",
+          "emblem": "Citizen"
+        },
+        "worker2": {
+          "workerClass": "Santa Claus",
+          "gender": "Male",
+          "workingReward": 1368,
+          "workingHours": 72,
+          "restingHours": 72,
+          "rarity": "Unique",
+          "emblem": "No Emblem"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 144,
+          "activity1": {
+            "worker": {
+              "workerClass": "Old",
+              "gender": "Male",
+              "workingReward": 288,
+              "workingHours": 72,
+              "restingHours": 61.2,
+              "rarity": "Common",
+              "emblem": "Citizen"
+            },
+            "type": "Resting",
+            "timeLeft": 61.2,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Santa Claus",
+              "gender": "Male",
+              "workingReward": 1368,
+              "workingHours": 72,
+              "restingHours": 72,
+              "rarity": "Unique",
+              "emblem": "No Emblem"
+            },
+            "type": "Working",
+            "timeLeft": 72,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 61.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 61.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Working",
+              "timeLeft": 10.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 72,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 61.2,
+              "lossWaiting": 288
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 2325.6000000000004
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 72,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Working",
+              "timeLeft": 61.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Resting",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 133.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Resting",
+              "timeLeft": 10.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 144,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 144,
+            "activity1": {
+              "worker": {
+                "workerClass": "Old",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 72,
+                "restingHours": 61.2,
+                "rarity": "Common",
+                "emblem": "Citizen"
+              },
+              "type": "Resting",
+              "timeLeft": 61.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Santa Claus",
+                "gender": "Male",
+                "workingReward": 1368,
+                "workingHours": 72,
+                "restingHours": 72,
+                "rarity": "Unique",
+                "emblem": "No Emblem"
+              },
+              "type": "Working",
+              "timeLeft": 72,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 72,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1,
+          "rating": 5.823703703703703
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 2,
+          "rating": 6.289599999999999
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 3,
+          "rating": 6.738857142857142
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 3,
+          "rating": 6.738857142857142
+        },
+        "profitPerDay": 223
+      }
+    ]
+  },
+  {
+    "rarity": "Uncommon",
+    "image": "houses/uncommon.png",
+    "emblem": "No Emblem",
+    "capacity": 15,
+    "lobby": [
+      {
+        "workerClass": "Fisherman",
+        "gender": "Male",
+        "workingReward": 108,
+        "workingHours": 18,
+        "restingHours": 18,
+        "rarity": "Uncommon",
+        "emblem": "Union"
+      }
+    ],
+    "beds": [
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Dancer",
+          "gender": "Female",
+          "workingReward": 192,
+          "workingHours": 24,
+          "restingHours": 20.4,
+          "rarity": "Rare",
+          "emblem": "Union"
+        },
+        "worker2": {
+          "workerClass": "Builder",
+          "gender": "Male",
+          "workingReward": 144,
+          "workingHours": 24,
+          "restingHours": 20.4,
+          "rarity": "Uncommon",
+          "emblem": "Union"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 44.4,
+          "activity1": {
+            "worker": {
+              "workerClass": "Dancer",
+              "gender": "Female",
+              "workingReward": 192,
+              "workingHours": 24,
+              "restingHours": 20.4,
+              "rarity": "Rare",
+              "emblem": "Union"
+            },
+            "type": "Resting",
+            "timeLeft": 20.4,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Builder",
+              "gender": "Male",
+              "workingReward": 144,
+              "workingHours": 24,
+              "restingHours": 20.4,
+              "rarity": "Uncommon",
+              "emblem": "Union"
+            },
+            "type": "Working",
+            "timeLeft": 24,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 20.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 3.6,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 20.4,
+              "lossWaiting": 192
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 244.79999999999998
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 44.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 44.4,
+            "activity1": {
+              "worker": {
+                "workerClass": "Dancer",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Rare",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 20.4,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Builder",
+                "gender": "Male",
+                "workingReward": 144,
+                "workingHours": 24,
+                "restingHours": 20.4,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 24,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 22.2,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 3,
+          "rating": 3.5377777777777775
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 6,
+          "rating": 3.8207999999999998
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 4.093714285714285
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 9,
+          "rating": 4.093714285714285
+        },
+        "profitPerDay": 133
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Farmer",
+          "gender": "Male",
+          "workingReward": 288,
+          "workingHours": 48,
+          "restingHours": 40.8,
+          "rarity": "Uncommon",
+          "emblem": "Union"
+        },
+        "worker2": {
+          "workerClass": "Farmer",
+          "gender": "Male",
+          "workingReward": 288,
+          "workingHours": 48,
+          "restingHours": 40.8,
+          "rarity": "Uncommon",
+          "emblem": "Union"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 88.8,
+          "activity1": {
+            "worker": {
+              "workerClass": "Farmer",
+              "gender": "Male",
+              "workingReward": 288,
+              "workingHours": 48,
+              "restingHours": 40.8,
+              "rarity": "Uncommon",
+              "emblem": "Union"
+            },
+            "type": "Resting",
+            "timeLeft": 40.8,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Farmer",
+              "gender": "Male",
+              "workingReward": 288,
+              "workingHours": 48,
+              "restingHours": 40.8,
+              "rarity": "Uncommon",
+              "emblem": "Union"
+            },
+            "type": "Working",
+            "timeLeft": 48,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 40.8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 7.2,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 40.8,
+              "lossWaiting": 288
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 489.59999999999997
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 48,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 88.8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 88.8,
+            "activity1": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 40.8,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Farmer",
+                "gender": "Male",
+                "workingReward": 288,
+                "workingHours": 48,
+                "restingHours": 40.8,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 48,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 44.4,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 1,
+          "rating": 2.0237037037037036
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 3.2783999999999995
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 4,
+          "rating": 3.1222857142857143
+        },
+        "type": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 3,
+          "rating": 3.2783999999999995
+        },
+        "profitPerDay": 106
+      },
+      {
+        "isLonely": false,
+        "worker1": {
+          "workerClass": "Miner",
+          "gender": "Male",
+          "workingReward": 72,
+          "workingHours": 12,
+          "restingHours": 10.2,
+          "rarity": "Uncommon",
+          "emblem": "Union"
+        },
+        "worker2": {
+          "workerClass": "Knight",
+          "gender": "Female",
+          "workingReward": 192,
+          "workingHours": 12,
+          "restingHours": 12,
+          "rarity": "Unique",
+          "emblem": "Warrior"
+        },
+        "isProfitable": true,
+        "currentStep": {
+          "elapsedTime": 24,
+          "activity1": {
+            "worker": {
+              "workerClass": "Miner",
+              "gender": "Male",
+              "workingReward": 72,
+              "workingHours": 12,
+              "restingHours": 10.2,
+              "rarity": "Uncommon",
+              "emblem": "Union"
+            },
+            "type": "Resting",
+            "timeLeft": 10.2,
+            "lossWaiting": null
+          },
+          "activity2": {
+            "worker": {
+              "workerClass": "Knight",
+              "gender": "Female",
+              "workingReward": 192,
+              "workingHours": 12,
+              "restingHours": 12,
+              "rarity": "Unique",
+              "emblem": "Warrior"
+            },
+            "type": "Working",
+            "timeLeft": 12,
+            "lossWaiting": null
+          },
+          "hasLossAnalisys": false
+        },
+        "steps": [
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 0,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 10.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 1.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 12,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 10.2,
+              "lossWaiting": 72
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": 326.4
+            },
+            "hasLossAnalisys": true
+          },
+          {
+            "elapsedTime": 12,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Working",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 22.2,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Resting",
+              "timeLeft": 1.8,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Exhausted",
+              "timeLeft": 0,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          },
+          {
+            "elapsedTime": 24,
+            "activity1": {
+              "worker": {
+                "workerClass": "Miner",
+                "gender": "Male",
+                "workingReward": 72,
+                "workingHours": 12,
+                "restingHours": 10.2,
+                "rarity": "Uncommon",
+                "emblem": "Union"
+              },
+              "type": "Resting",
+              "timeLeft": 10.2,
+              "lossWaiting": null
+            },
+            "activity2": {
+              "worker": {
+                "workerClass": "Knight",
+                "gender": "Female",
+                "workingReward": 192,
+                "workingHours": 12,
+                "restingHours": 12,
+                "rarity": "Unique",
+                "emblem": "Warrior"
+              },
+              "type": "Working",
+              "timeLeft": 12,
+              "lossWaiting": null
+            },
+            "hasLossAnalisys": false
+          }
+        ],
+        "cycle": 12,
+        "regularBed": {
+          "name": "Regular Bed",
+          "price": 135,
+          "hours": 74,
+          "cycles": 6,
+          "rating": 5.5555555555555545
+        },
+        "luxuryBed": {
+          "name": "Luxury Bed",
+          "price": 250,
+          "hours": 148,
+          "cycles": 12,
+          "rating": 5.999999999999999
+        },
+        "legendaryRoyalBed": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 18,
+          "rating": 6.428571428571427
+        },
+        "type": {
+          "name": "Legendary Royal Bed",
+          "price": 350,
+          "hours": 222,
+          "cycles": 18,
+          "rating": 6.428571428571427
+        },
+        "profitPerDay": 211
+      }
+    ]
+  }
+]

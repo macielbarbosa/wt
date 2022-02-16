@@ -78,10 +78,9 @@ export class Bed {
 
   setRewardPerCycle() {
     const {
-      worker1: { workingReward: r1, workingHours: h1, workerClass: workerClass1 },
+      worker1: { workingReward: r1, workerClass: workerClass1 },
     } = this
     const r2 = this.isLonely ? 0 : this.worker2.workingReward
-    const h2 = this.isLonely ? 0 : this.worker2.workingHours
     const workerClass2 = this.isLonely ? undefined : this.worker2.workerClass
     const isSameWorker = workerClass1 === workerClass2
     const result =

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styled } from '@mui/system'
 import { Button } from '@mui/material'
+import Dialog from '@mui/material/Dialog'
 
 import { useContext } from '../context'
 import { useStrings } from '../strings/context'
 import { Centered } from 'common/Centered'
 import { CenteredRow } from 'common/CenteredRow'
+import { Strategy } from './Strategy'
 
 const Root = styled('div')({
   '& > :not(:last-child)': {
@@ -25,9 +27,9 @@ export const Resume = () => {
     houses,
     workers,
     strategy: { coinsPerDay },
-    onSet,
   } = useContext()
   const strings = useStrings()
+  const [openStrategy, setOpenStrategy] = useState(true)
 
   return (
     <CenteredRow>
@@ -42,11 +44,18 @@ export const Resume = () => {
           {strings.dailyProfit}: {coinsPerDay} {strings[coinsPerDay > 1 ? 'coins' : 'coin']}
         </div>
         <Centered>
-          <Button onClick={onSet('workers')} variant="outlined">
+          <Button onClick={() => setOpenStrategy(true)} variant="outlined">
             {strings.strategy}
           </Button>
         </Centered>
       </Root>
+      <Dialog
+        maxWidth={false}
+        open={openStrategy}
+        onClose={() => setOpenStrategy(false)} /* TransitionComponent={Transition} */
+      >
+        <Strategy />
+      </Dialog>
     </CenteredRow>
   )
 }

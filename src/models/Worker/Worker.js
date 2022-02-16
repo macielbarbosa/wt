@@ -5,12 +5,13 @@ export class Worker {
   constructor(workerClass, gender) {
     this.workerClass = workerClass
     this.gender = gender
-    const { workingReward, workingHours, emblem, rarity } = getWorkerMetadata(workerClass)
+    const { workingReward, workingHours, emblem, rarity, image } = getWorkerMetadata(workerClass)
     this.workingReward = workingReward
     this.workingHours = workingHours
     this.restingHours = workingHours
     this.rarity = rarity
     this.emblem = emblem
+    this.image = image
   }
 
   setEmblemBonus(withEmblemBonus) {

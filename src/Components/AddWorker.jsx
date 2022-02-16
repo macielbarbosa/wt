@@ -107,7 +107,7 @@ const workersOptions = [
   { workerClass: workerClasses.knight, gender: genders.female },
   { workerClass: workerClasses.thief, gender: genders.female },
   { workerClass: workerClasses.rogue, gender: genders.male },
-  { workerClass: workerClasses.paladin, gender: genders.male },
+  //{ workerClass: workerClasses.paladin, gender: genders.male },
   { workerClass: workerClasses.santaClaus, gender: genders.male },
   { workerClass: workerClasses.necromancer, gender: genders.male },
   { workerClass: workerClasses.plagueDoctor, gender: genders.male },
