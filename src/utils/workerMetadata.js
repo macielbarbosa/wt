@@ -1,6 +1,6 @@
 import { enumEmblems, rarities, workerClasses } from './constants'
 
-const workerDictionary = Object.freeze({
+export const workerMetadata = Object.freeze({
   [workerClasses.bandit]: {
     rarity: rarities.common,
     workingReward: 24,
@@ -247,5 +247,3 @@ const workerDictionary = Object.freeze({
     image: 'sprites/queen_female.png',
   },
 })
-
-export const getWorkerMetadata = (workerClass) => ({ ...workerDictionary[workerClass] })

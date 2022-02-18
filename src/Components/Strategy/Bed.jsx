@@ -5,6 +5,7 @@ import { Tooltip } from '@mui/material'
 import { useStrings } from '../../strings/context'
 import { ASSETS_URL, bedsImages } from 'utils/constants'
 import { getWorkerImage } from 'utils/worker'
+import { Worker } from './Worker'
 
 const Root = styled('div')({
   position: 'relative',
@@ -40,16 +41,8 @@ export const Bed = ({ value: bed }) => {
         <Tooltip title={type.name}>
           <img width="40" src={ASSETS_URL + bedsImages[type.name]} />
         </Tooltip>
-        <Tooltip title={worker1.workerClass}>
-          <WorkerImage src={getWorkerImage(worker1)} />
-        </Tooltip>
-        {worker2 && (
-          <div style={{ display: 'inline-block' }}>
-            <Tooltip title={worker2.workerClass}>
-              <WorkerImage src={getWorkerImage(worker2)} />
-            </Tooltip>
-          </div>
-        )}
+        <Worker value={worker1} />
+        {worker2 && <Worker value={worker2} />}
       </div>
       {workerWithEmblemBonus && (
         <EmblemImage src={ASSETS_URL + `houses/emblems/${workerWithEmblemBonus.emblem.toLowerCase()}.png`} />

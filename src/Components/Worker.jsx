@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/system'
 
-import { getWorkerMetadata } from '../utils/getWorkerMetadata'
+import { workerMetadata } from '../utils/workerMetadata'
 import { NftPaper } from 'common/NftPaper'
 import { genders, multipleGenders } from '../utils/constants'
 import { getWorkerImage } from 'utils/worker'
@@ -18,8 +18,8 @@ const Info = styled('div')({
   position: 'absolute',
 })
 
-export const Worker = ({ workerClass, gender, onDelete, onChange, image }) => {
-  const { rarity, workingHours, workingReward } = getWorkerMetadata(workerClass)
+export const Worker = ({ onDelete, onChange, ...worker }) => {
+  const { rarity, workingHours, workingReward, workerClass, gender } = worker
   const isMultipleGenders = multipleGenders.includes(workerClass)
 
   const toggleGender = () => {
@@ -42,7 +42,7 @@ export const Worker = ({ workerClass, gender, onDelete, onChange, image }) => {
         <div>{workingHours}</div>
       </Info>
       <CenteredRow>
-        <img width="175" src={getWorkerImage({ image, gender })} />
+        <img width="175" src={getWorkerImage(worker)} />
       </CenteredRow>
     </Root>
   )

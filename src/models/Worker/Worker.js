@@ -1,11 +1,11 @@
 import { round } from 'utils/general'
-import { getWorkerMetadata } from 'utils/getWorkerMetadata'
+import { workerMetadata } from 'utils/workerMetadata'
 
 export class Worker {
   constructor(workerClass, gender) {
     this.workerClass = workerClass
     this.gender = gender
-    const { workingReward, workingHours, emblem, rarity, image } = getWorkerMetadata(workerClass)
+    const { workingReward, workingHours, emblem, rarity, image } = workerMetadata[workerClass]
     this.workingReward = workingReward
     this.workingHours = workingHours
     this.restingHours = workingHours
