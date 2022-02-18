@@ -3,7 +3,7 @@
     "workerClass": "Queen",
     "gender": "Female",
     "rarity": "Legendary",
-    "workingReward": 672,
+    "workingReward": 1769,
     "workingHours": 24,
     "emblem": "Royal"
   },
@@ -11,7 +11,7 @@
     "workerClass": "King",
     "gender": "Male",
     "rarity": "Legendary",
-    "workingReward": 624,
+    "workingReward": 1608,
     "workingHours": 24,
     "emblem": "Royal"
   },
@@ -19,7 +19,7 @@
     "workerClass": "Princess",
     "gender": "Female",
     "rarity": "Legendary",
-    "workingReward": 1104,
+    "workingReward": 2948,
     "workingHours": 48,
     "emblem": "Royal"
   },
@@ -27,7 +27,7 @@
     "workerClass": "Prince",
     "gender": "Male",
     "rarity": "Legendary",
-    "workingReward": 1056,
+    "workingReward": 2721,
     "workingHours": 48,
     "emblem": "Royal"
   },
@@ -35,7 +35,7 @@
     "workerClass": "Plague Doctor",
     "gender": "Male",
     "rarity": "Legendary",
-    "workingReward": 252,
+    "workingReward": 632,
     "workingHours": 12,
     "emblem": "Warrior"
   },
@@ -43,7 +43,7 @@
     "workerClass": "Necromancer",
     "gender": "Male",
     "rarity": "Legendary",
-    "workingReward": 480,
+    "workingReward": 1179,
     "workingHours": 24,
     "emblem": "Enchanter"
   },
@@ -51,23 +51,15 @@
     "workerClass": "Santa Claus",
     "gender": "Male",
     "rarity": "Unique",
-    "workingReward": 1368,
+    "workingReward": 3425,
     "workingHours": 72,
     "emblem": "No Emblem"
-  },
-  {
-    "workerClass": "Paladin",
-    "gender": "Male",
-    "rarity": "Unique",
-    "workingReward": 864,
-    "workingHours": 48,
-    "emblem": "Warrior"
   },
   {
     "workerClass": "Rogue",
     "gender": "Male",
     "rarity": "Unique",
-    "workingReward": 432,
+    "workingReward": 1012,
     "workingHours": 24,
     "emblem": "Exile"
   },
@@ -75,7 +67,7 @@
     "workerClass": "Thief",
     "gender": "Female",
     "rarity": "Unique",
-    "workingReward": 102,
+    "workingReward": 228,
     "workingHours": 6,
     "emblem": "Exile"
   },
@@ -83,7 +75,7 @@
     "workerClass": "Knight",
     "gender": "Female",
     "rarity": "Unique",
-    "workingReward": 192,
+    "workingReward": 434,
     "workingHours": 12,
     "emblem": "Warrior"
   },
@@ -91,7 +83,7 @@
     "workerClass": "Royal Guard",
     "gender": "Male",
     "rarity": "Unique",
-    "workingReward": 720,
+    "workingReward": 1584,
     "workingHours": 48,
     "emblem": "Warrior"
   },
@@ -99,7 +91,7 @@
     "workerClass": "Alchemist",
     "gender": "Male",
     "rarity": "Unique",
-    "workingReward": 336,
+    "workingReward": 759,
     "workingHours": 24,
     "emblem": "Enchanter"
   },
@@ -107,7 +99,7 @@
     "workerClass": "Cult",
     "gender": "Male",
     "rarity": "Epic",
-    "workingReward": 624,
+    "workingReward": 1466,
     "workingHours": 48,
     "emblem": "Exile"
   },
@@ -115,7 +107,7 @@
     "workerClass": "Ninja",
     "gender": "Male",
     "rarity": "Epic",
-    "workingReward": 96,
+    "workingReward": 235,
     "workingHours": 8,
     "emblem": "Exile"
   },
@@ -123,7 +115,7 @@
     "workerClass": "Pirate Leader",
     "gender": "Male",
     "rarity": "Epic",
-    "workingReward": 792,
+    "workingReward": 1973,
     "workingHours": 72,
     "emblem": "Villain"
   },
@@ -131,7 +123,7 @@
     "workerClass": "Priestess",
     "gender": "Female",
     "rarity": "Epic",
-    "workingReward": 360,
+    "workingReward": 953,
     "workingHours": 36,
     "emblem": "Enchanter"
   },
@@ -139,7 +131,7 @@
     "workerClass": "Gladiator",
     "gender": "Male",
     "rarity": "Epic",
-    "workingReward": 216,
+    "workingReward": 595,
     "workingHours": 24,
     "emblem": "Protector"
   },
@@ -147,7 +139,7 @@
     "workerClass": "Archer",
     "gender": "Female",
     "rarity": "Rare",
-    "workingReward": 576,
+    "workingReward": 1745,
     "workingHours": 72,
     "emblem": "Protector"
   },
@@ -155,7 +147,7 @@
     "workerClass": "Mage",
     "gender": "Male",
     "rarity": "Rare",
-    "workingReward": 384,
+    "workingReward": 1162,
     "workingHours": 48,
     "emblem": "Enchanter"
   },
@@ -163,7 +155,7 @@
     "workerClass": "Dancer",
     "gender": "Female",
     "rarity": "Rare",
-    "workingReward": 192,
+    "workingReward": 581,
     "workingHours": 24,
     "emblem": "Union"
   },
@@ -171,7 +163,7 @@
     "workerClass": "Bard",
     "gender": "Female",
     "rarity": "Rare",
-    "workingReward": 96,
+    "workingReward": 290,
     "workingHours": 12,
     "emblem": "Citizen"
   },
@@ -179,7 +171,7 @@
     "workerClass": "Bandit Leader",
     "gender": "Male",
     "rarity": "Rare",
-    "workingReward": 64,
+    "workingReward": 194,
     "workingHours": 8,
     "emblem": "Villain"
   },
@@ -187,7 +179,7 @@
     "workerClass": "Adventurer",
     "gender": "Male",
     "rarity": "Uncommon",
-    "workingReward": 432,
+    "workingReward": 1519,
     "workingHours": 72,
     "emblem": "Protector"
   },
@@ -195,7 +187,7 @@
     "workerClass": "Farmer",
     "gender": "Male",
     "rarity": "Uncommon",
-    "workingReward": 288,
+    "workingReward": 1013,
     "workingHours": 48,
     "emblem": "Union"
   },
@@ -203,7 +195,7 @@
     "workerClass": "Builder",
     "gender": "Male",
     "rarity": "Uncommon",
-    "workingReward": 144,
+    "workingReward": 506,
     "workingHours": 24,
     "emblem": "Union"
   },
@@ -211,7 +203,7 @@
     "workerClass": "Fisherman",
     "gender": "Male",
     "rarity": "Uncommon",
-    "workingReward": 108,
+    "workingReward": 380,
     "workingHours": 18,
     "emblem": "Union"
   },
@@ -219,7 +211,7 @@
     "workerClass": "Miner",
     "gender": "Male",
     "rarity": "Uncommon",
-    "workingReward": 72,
+    "workingReward": 253,
     "workingHours": 12,
     "emblem": "Union"
   },
@@ -227,7 +219,7 @@
     "workerClass": "Blacksmith",
     "gender": "Male",
     "rarity": "Uncommon",
-    "workingReward": 48,
+    "workingReward": 169,
     "workingHours": 8,
     "emblem": "Protector"
   },
@@ -235,7 +227,7 @@
     "workerClass": "Old",
     "gender": "Male",
     "rarity": "Common",
-    "workingReward": 288,
+    "workingReward": 1357,
     "workingHours": 72,
     "emblem": "Citizen"
   },
@@ -243,7 +235,7 @@
     "workerClass": "Pirate",
     "gender": "Male",
     "rarity": "Common",
-    "workingReward": 192,
+    "workingReward": 904,
     "workingHours": 48,
     "emblem": "Villain"
   },
@@ -251,7 +243,7 @@
     "workerClass": "Young",
     "gender": "Male",
     "rarity": "Common",
-    "workingReward": 144,
+    "workingReward": 678,
     "workingHours": 36,
     "emblem": "Citizen"
   },
@@ -259,7 +251,7 @@
     "workerClass": "Inn Keeper",
     "gender": "Male",
     "rarity": "Common",
-    "workingReward": 96,
+    "workingReward": 452,
     "workingHours": 24,
     "emblem": "Citizen"
   },
@@ -267,7 +259,7 @@
     "workerClass": "Villager",
     "gender": "Female",
     "rarity": "Common",
-    "workingReward": 48,
+    "workingReward": 226,
     "workingHours": 12,
     "emblem": "Citizen"
   },
@@ -275,7 +267,7 @@
     "workerClass": "Bandit",
     "gender": "Male",
     "rarity": "Common",
-    "workingReward": 24,
+    "workingReward": 113,
     "workingHours": 6,
     "emblem": "Villain"
   }
