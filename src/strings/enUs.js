@@ -12,6 +12,6 @@ export const enUs = {
   free: 'Free',
   coins: 'COINS',
   coin: 'COIN',
-  dailyProfit: 'Daily profit',
+  averageDailyProfit: 'Average daily profit',
   strategy: 'Strategy',
 }

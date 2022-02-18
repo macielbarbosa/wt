@@ -50,7 +50,7 @@ export const Strategy = ({ onClose }) => {
           </IconButton>
         </div>
         <Typography variant="h5">
-          {strings.dailyProfit}: {strategy.coinsPerDay} <CoinImage large />
+          {strings.averageDailyProfit}: {strategy.coinsPerDay} <CoinImage large />
         </Typography>
         <div style={{ width: 40 }} />
       </SpaceBetween>

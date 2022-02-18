@@ -43,7 +43,7 @@ export const Resume = () => {
           {strings.workers}: {workers.length}
         </div>
         <div>
-          {strings.dailyProfit}: {coinsPerDay} <CoinImage />
+          {strings.averageDailyProfit}: {coinsPerDay} <CoinImage />
         </div>
         <Centered>
           <Button startIcon={<Visibility />} onClick={() => setOpenStrategy(true)} variant="outlined">

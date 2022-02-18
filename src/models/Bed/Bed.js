@@ -1,4 +1,4 @@
-import { bedToLonely, bestRating } from 'utils/bed'
+import { bedWorkerLonely, bestRating } from 'utils/bed'
 import { round } from 'utils/general'
 import { activities, beds } from '../../utils/constants'
 import { Activity } from './Activity'
@@ -36,9 +36,9 @@ export class Bed {
   }
 
   makeLonely() {
-    const { workingHours } = this.worker1
-    this.cycle = workingHours
-    this.type = bedToLonely(workingHours)
+    const { workingHours, restingHours } = this.worker1
+    this.type = bedWorkerLonely(this.worker1)
+    this.cycle = workingHours + restingHours
     this.setRewardPerCycle()
     this.setProfitPerDay()
     this.isProfitable = this.profitPerDay > 0
@@ -94,10 +94,8 @@ export class Bed {
 
   setProfitPerDay() {
     const totalReward = this.type.cycles * this.rewardPerCycle
-    const typeDays = this.type.hours / 24
-    const rewardPerDay = totalReward / typeDays
-    const costPerDay = this.type.price / typeDays
-    this.profitPerDay = Math.round(rewardPerDay - costPerDay)
+    const days = (this.cycle * this.type.cycles) / 24
+    this.profitPerDay = Math.round((totalReward - this.type.price) / days)
   }
 
   get isFinished() {

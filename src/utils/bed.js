@@ -6,7 +6,7 @@ export const getCycles = (workingHours, bedHours) => {
   return isEvenNumber(factor) ? Math.floor(factor / 2) : Math.ceil(factor / 2)
 }
 
-export const bedToLonely = (workingHours) => {
+export const bedWorkerLonely = ({ workingHours, withEmblemBonus }) => {
   switch (workingHours) {
     case 72:
       return { ...beds.regular, cycles: 1 }
