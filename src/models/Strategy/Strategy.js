@@ -2,9 +2,6 @@ import { enumEmblems } from '../../utils/constants'
 import { uniqueItems } from 'utils/uniqueItems'
 import { Bed } from 'models/Bed'
 
-// TODO: young e casa citizen gera profit 0 (não aconteceu novamente)
-// TODO: worker duplica quando tem duas casas com seu emblema.
-
 export class Strategy {
   constructor(workers, houses) {
     this.workers = workers
@@ -15,10 +12,12 @@ export class Strategy {
     this.validEmblems = this.emblems.filter((emblem) => emblem && emblem !== enumEmblems.noEmblem)
 
     this.housesWithEmblem = this.houses.filter((house) => house.hasEmblem)
+    const emblemsLobbyAdded = []
     this.housesWithEmblem.forEach((house) => {
-      // TODO: VERIFICAR QUANDO TEMOS 2 HOUSES COM O MESMO EMBLEMA
+      if (emblemsLobbyAdded.includes(house.emblem)) return
       const workersWithEmblem = this.workers.filter((worker) => worker.emblem === house.emblem)
       house.addLobby(...workersWithEmblem)
+      emblemsLobbyAdded.push(house.emblem)
     })
 
     this.freeHouse = houses[0]

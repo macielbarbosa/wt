@@ -15,7 +15,7 @@ const Title = styled(Typography)({
 
 const Content = styled('div')({
   width: '100%',
-  padding: '30px 40px',
+  padding: '30px 40px 60px',
   '& > :not(:last-child)': {
     marginBottom: 40,
   },

@@ -12,7 +12,6 @@ export class House {
     this.image = image
     this.lobby = []
     this.beds = []
-    this.hasEmblem = this.emblem !== enumEmblems.noEmblem
     this.isFree = this.capacity < 10
   }
 
@@ -53,6 +52,10 @@ export class House {
       }
     }
     return this.lobby.shift()
+  }
+
+  get hasEmblem() {
+    return this.emblem !== enumEmblems.noEmblem
   }
 
   get isLobbyEmpty() {
