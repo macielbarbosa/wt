@@ -18,12 +18,12 @@ const Info = styled('div')({
   position: 'absolute',
 })
 
-export const Worker = ({ onDelete, onChange, ...worker }) => {
+export const Worker = ({ onDelete, onChangeGender, ...worker }) => {
   const { rarity, workingHours, workingReward, workerClass, gender } = worker
   const isMultipleGenders = multipleGenders.includes(workerClass)
 
   const toggleGender = () => {
-    onChange({ gender: gender === genders.male ? genders.female : genders.male })
+    onChangeGender(gender === genders.male ? genders.female : genders.male)
   }
 
   return (

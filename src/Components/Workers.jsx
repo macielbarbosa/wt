@@ -12,9 +12,8 @@ export const Workers = () => {
     set({ workers: workers.filter((_, i) => i !== index) })
   }
 
-  const onChange = (index) => (properties) => {
-    const worker = workers[index]
-    workers[index] = { ...worker, ...properties }
+  const onChangeGender = (index) => (gender) => {
+    workers[index].gender = gender
     set({ workers })
   }
 
@@ -29,7 +28,7 @@ export const Workers = () => {
     >
       <AddWorker />
       {workers.map((worker, index) => (
-        <Worker onChange={onChange(index)} onDelete={deleteWorker(index)} key={index} {...worker} />
+        <Worker onChangeGender={onChangeGender(index)} onDelete={deleteWorker(index)} key={index} {...worker} />
       ))}
     </Box>
   )
