@@ -1,5 +1,5 @@
 import { Bed } from 'models/Bed'
-import { getHouseMetadata } from 'utils/getHouseMetadata'
+import { houseMetadata } from 'utils/houseMetadata'
 import { higherSalary } from 'utils/higherSalary'
 import { enumEmblems } from '../../utils/constants'
 
@@ -7,7 +7,7 @@ export class House {
   constructor(rarity, emblem = enumEmblems.noEmblem) {
     this.rarity = rarity
     this.emblem = emblem
-    const { capacity, image } = getHouseMetadata(rarity)
+    const { capacity, image } = houseMetadata[rarity]
     this.capacity = capacity
     this.image = image
     this.lobby = []

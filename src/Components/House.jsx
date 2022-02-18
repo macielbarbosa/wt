@@ -1,11 +1,22 @@
 import React from 'react'
 import { Button } from '@mui/material'
+import { styled } from '@mui/system'
 
 import { NftPaper } from 'common/NftPaper'
 import { useStrings } from '../strings/context'
-import { CenteredRow } from 'common/CenteredRow'
+import { Centered } from 'common/Centered'
 import { getNextArrayItem } from '../utils/getNextArrayItem'
 import { tiers, houseRarities, enumEmblems } from '../utils/constants'
+import { HouseImage } from 'common/HouseImage'
+import { SpaceBetween } from 'common/SpaceBetween'
+import { EmblemImage } from 'common/EmblemImage'
+
+const Paper = styled(NftPaper)({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  height: 250,
+})
 
 export const House = ({ rarity, emblem, isFree, onDelete, onChangeRarity, onChangeEmblem, capacity }) => {
   const strings = useStrings()
@@ -20,21 +31,25 @@ export const House = ({ rarity, emblem, isFree, onDelete, onChangeRarity, onChan
   }
 
   return (
-    <NftPaper onDelete={onDelete} nonDeletable={isFree}>
-      {!isFree && (
-        <CenteredRow>
-          <Button onClick={toggleEmblem}>{emblem !== enumEmblems.noEmblem ? emblem : 'No emblem'}</Button>
-        </CenteredRow>
-      )}
-      <br />
-      <div onClick={toggleRarity} style={{ cursor: 'pointer' }}>
+    <Paper onDelete={onDelete} nonDeletable={isFree}>
+      <Centered onClick={toggleRarity} style={{ cursor: 'pointer' }}>
+        <HouseImage rarity={rarity} />
+      </Centered>
+      <SpaceBetween>
         <div>
-          {isFree && strings.free} {rarity}
+          <div>
+            {isFree && strings.free} {rarity}
+          </div>
+          <div>
+            {strings.capacity}: {capacity}
+          </div>
         </div>
-        <div>
-          {strings.capacity}: {capacity}
-        </div>
-      </div>
-    </NftPaper>
+        {!isFree && (
+          <div onClick={toggleEmblem}>
+            <EmblemImage emblem={emblem} />
+          </div>
+        )}
+      </SpaceBetween>
+    </Paper>
   )
 }

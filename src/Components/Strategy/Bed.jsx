@@ -19,6 +19,7 @@ const Root = styled('div')({
 })
 
 const WorkerImage = styled('img')({
+  width: 65,
   margin: '0 -15px 0 4px',
 })
 
@@ -40,12 +41,12 @@ export const Bed = ({ value: bed }) => {
           <img width="40" src={ASSETS_URL + bedsImages[type.name]} />
         </Tooltip>
         <Tooltip title={worker1.workerClass}>
-          <WorkerImage width="60" src={getWorkerImage(worker1)} />
+          <WorkerImage src={getWorkerImage(worker1)} />
         </Tooltip>
         {worker2 && (
           <div style={{ display: 'inline-block' }}>
             <Tooltip title={worker2.workerClass}>
-              <WorkerImage width="60" src={getWorkerImage(worker2)} />
+              <WorkerImage src={getWorkerImage(worker2)} />
             </Tooltip>
           </div>
         )}

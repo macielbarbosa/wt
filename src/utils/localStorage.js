@@ -11,7 +11,7 @@ class localStorage {
     const item = this.getItem(name)
     if (!item) {
       this.setItem(name, value)
-      return { [name]: value }
+      return value
     } else return item
   }
 }

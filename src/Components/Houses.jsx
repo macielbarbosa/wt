@@ -4,13 +4,13 @@ import { Box } from '@mui/system'
 import { useContext } from '../context'
 import { House } from './House'
 import { AddHouse } from './AddHouse'
-import { getHouseMetadata } from 'utils/getHouseMetadata'
+import { houseMetadata } from 'utils/houseMetadata'
 
 export const Houses = () => {
   const { houses, set } = useContext()
 
   const onChangeRarity = (index) => (rarity) => {
-    const { capacity } = getHouseMetadata(rarity)
+    const { capacity } = houseMetadata[rarity]
     houses[index].rarity = rarity
     houses[index].capacity = capacity
     set({ houses })

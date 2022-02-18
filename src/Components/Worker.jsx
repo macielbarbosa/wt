@@ -1,13 +1,24 @@
 import React from 'react'
-// import { styled } from '@mui/system'
+import { styled } from '@mui/system'
 
 import { getWorkerMetadata } from '../utils/getWorkerMetadata'
-import { NftPaper /* as CommonNftPaper */ } from 'common/NftPaper'
+import { NftPaper } from 'common/NftPaper'
 import { genders, multipleGenders } from '../utils/constants'
+import { getWorkerImage } from 'utils/worker'
+import { CenteredRow } from 'common/CenteredRow'
 
-/* const NftPaper = styled(CommonNftPaper)({ height: 244, display: 'none' }) */
+const Root = styled(NftPaper)({
+  height: 244,
+  '& img': {
+    marginTop: 0,
+  },
+})
 
-export const Worker = ({ workerClass, gender, onDelete, onChange }) => {
+const Info = styled('div')({
+  position: 'absolute',
+})
+
+export const Worker = ({ workerClass, gender, onDelete, onChange, image }) => {
   const { rarity, workingHours, workingReward } = getWorkerMetadata(workerClass)
   const isMultipleGenders = multipleGenders.includes(workerClass)
 
@@ -16,18 +27,23 @@ export const Worker = ({ workerClass, gender, onDelete, onChange }) => {
   }
 
   return (
-    <NftPaper onDelete={onDelete} sx={{ height: 244 }}>
-      <div>{workerClass}</div>
-      <div>{rarity}</div>
-      {isMultipleGenders ? (
-        <div style={{ cursor: 'pointer' }} onClick={toggleGender}>
-          {gender}
-        </div>
-      ) : (
-        <div>{gender}</div>
-      )}
-      <div>{workingReward}</div>
-      <div>{workingHours}</div>
-    </NftPaper>
+    <Root onDelete={onDelete}>
+      <Info>
+        <div>{workerClass}</div>
+        <div>{rarity}</div>
+        {isMultipleGenders ? (
+          <div style={{ cursor: 'pointer' }} onClick={toggleGender}>
+            {gender}
+          </div>
+        ) : (
+          <div>{gender}</div>
+        )}
+        <div>{workingReward}</div>
+        <div>{workingHours}</div>
+      </Info>
+      <CenteredRow>
+        <img width="175" src={getWorkerImage({ image, gender })} />
+      </CenteredRow>
+    </Root>
   )
 }

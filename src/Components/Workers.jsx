@@ -25,8 +25,6 @@ export const Workers = () => {
         columnGap: 3,
         rowGap: 1,
         gridTemplateColumns: 'repeat(4, 1fr)',
-        /* overflowY: 'auto',
-        maxHeight: 500, */
       }}
     >
       <AddWorker />

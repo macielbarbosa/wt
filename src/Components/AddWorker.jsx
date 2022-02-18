@@ -33,7 +33,7 @@ export const AddWorker = () => {
   }
 
   return (
-    <Paper style={{ width: 250, padding: open ? 20 : 0 }}>
+    <Paper style={{ height: 244, width: 250, padding: open ? 20 : 0 }}>
       {open ? (
         <Fragment>
           <Typography variant="h6">{strings.addWorker}</Typography>

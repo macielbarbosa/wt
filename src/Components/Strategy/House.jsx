@@ -5,12 +5,12 @@ import { styled } from '@mui/system'
 import { useStrings } from '../../strings/context'
 import { ASSETS_URL, enumEmblems } from 'utils/constants'
 import { Bed } from './Bed'
+import { HouseImage } from 'common/HouseImage'
 
 const Root = styled(Paper)({
-  display: 'inline-flex',
+  display: 'flex',
   flexDirection: 'row',
   padding: 20,
-  maxWidth: 800,
 })
 
 const EmblemImage = styled('img')({
@@ -22,16 +22,16 @@ const EmblemImage = styled('img')({
 
 export const House = ({ value: house }) => {
   const strings = useStrings()
-  const { rarity, image, emblem, beds } = house
+  const { rarity, emblem, beds } = house
   return (
     <Root>
       <div style={{ position: 'relative' }}>
-        <Tooltip title={rarity}>
-          <img style={{ padding: 5 }} width="100" src={ASSETS_URL + image} />
-        </Tooltip>
+        <HouseImage rarity={rarity} />
         {emblem !== enumEmblems.noEmblem && (
           <Tooltip title={emblem} placement="top">
-            <EmblemImage src={ASSETS_URL + `houses/emblems/${emblem.toLowerCase()}.png`} />
+            <div>
+              <EmblemImage src={ASSETS_URL + `houses/emblems/${emblem.toLowerCase()}.png`} />
+            </div>
           </Tooltip>
         )}
       </div>

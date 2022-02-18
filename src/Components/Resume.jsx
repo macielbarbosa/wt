@@ -8,6 +8,8 @@ import { useStrings } from '../strings/context'
 import { Centered } from 'common/Centered'
 import { CenteredRow } from 'common/CenteredRow'
 import { Strategy } from './Strategy'
+import { Visibility } from '@mui/icons-material'
+import { CoinImage } from 'common/CoinImage'
 
 const Root = styled('div')({
   '& > :not(:last-child)': {
@@ -29,32 +31,28 @@ export const Resume = () => {
     strategy: { coinsPerDay },
   } = useContext()
   const strings = useStrings()
-  const [openStrategy, setOpenStrategy] = useState(true)
+  const [openStrategy, setOpenStrategy] = useState(false)
 
   return (
     <CenteredRow>
       <Root>
         <div>
+          {strings.houses}: {houses.length - 1}
+        </div>
+        <div>
           {strings.workers}: {workers.length}
         </div>
         <div>
-          {strings.houses}: {houses.length}
-        </div>
-        <div>
-          {strings.dailyProfit}: {coinsPerDay} {strings[coinsPerDay > 1 ? 'coins' : 'coin']}
+          {strings.dailyProfit}: {coinsPerDay} <CoinImage />
         </div>
         <Centered>
-          <Button onClick={() => setOpenStrategy(true)} variant="outlined">
+          <Button startIcon={<Visibility />} onClick={() => setOpenStrategy(true)} variant="outlined">
             {strings.strategy}
           </Button>
         </Centered>
       </Root>
-      <Dialog
-        maxWidth={false}
-        open={openStrategy}
-        onClose={() => setOpenStrategy(false)} /* TransitionComponent={Transition} */
-      >
-        <Strategy />
+      <Dialog maxWidth="xl" open={openStrategy} onClose={() => setOpenStrategy(false)}>
+        <Strategy onClose={() => setOpenStrategy(false)} />
       </Dialog>
     </CenteredRow>
   )
