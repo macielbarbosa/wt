@@ -87,10 +87,10 @@ export class Bed {
     const isSameWorker = workerClass1 === workerClass2
     const result =
       this.isLonely || isSameWorker
-        ? r1 * 0.95 - 0.4
+        ? r1 * 0.95 - 4
         : this.isSameWorkingHours
-        ? ((r1 + r2) / 2) * 0.95 - 0.4
-        : (r1 + r2) * 0.95 - 0.8
+        ? ((r1 + r2) / 2) * 0.95 - 4
+        : (r1 + r2) * 0.95 - 8
     this.rewardPerCycle = round(result)
   }
 
