@@ -51,7 +51,7 @@ export const Resume = () => {
           </Button>
         </Centered>
       </Root>
-      <Dialog maxWidth="xl" open={openStrategy} onClose={() => setOpenStrategy(false)}>
+      <Dialog maxWidth="md" open={openStrategy} onClose={() => setOpenStrategy(false)}>
         <Strategy onClose={() => setOpenStrategy(false)} />
       </Dialog>
     </CenteredRow>
