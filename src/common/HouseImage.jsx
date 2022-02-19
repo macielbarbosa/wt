@@ -33,11 +33,11 @@ export const HouseImage = ({ rarity }) => {
   switch (rarity) {
     case tiers.tier1:
     case tiers.tier2:
-    case tiers.tier3:
     case rarities.common:
       return <ImageSize1 {...props} />
     case rarities.uncommon:
       return <ImageSize2 {...props} />
+    case tiers.tier3:
     case rarities.rare:
       return <ImageSize3 {...props} />
     case rarities.unique:

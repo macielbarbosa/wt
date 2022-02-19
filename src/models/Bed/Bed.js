@@ -47,10 +47,12 @@ export class Bed {
 
   checkPairViability() {
     const {
-      worker1: { workingHours: h1, workingReward: r1 },
-      worker2: { workingHours: h2, workingReward: r2 },
+      worker1: { workingHours: h1, restingHours: r1, workingReward: wr1 },
+      worker2: { workingHours: h2, restingHours: r2, workingReward: wr2 },
     } = this
-    return (h2 * r1) / h1 <= (2 * h1 * r2) / h2
+    const maxLossWaitingWorker2 = r2 * (wr1 / h1)
+    const maxLossWaitingWorker1 = (h1 + r1) * (wr2 / h2)
+    return r1 === r2 || maxLossWaitingWorker2 <= maxLossWaitingWorker1
   }
 
   simulateRotation() {
