@@ -1,7 +1,7 @@
 import { Bed } from 'models/Bed'
 import { houseMetadata } from 'utils/houseMetadata'
 import { higherSalary } from 'utils/higherSalary'
-import { enumEmblems } from '../../utils/constants'
+import { enumEmblems } from '../utils/constants'
 
 export class House {
   constructor(rarity, emblem = enumEmblems.noEmblem) {

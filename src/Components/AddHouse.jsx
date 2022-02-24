@@ -8,7 +8,7 @@ import { useContext } from 'context'
 import { CenteredColumn } from 'common/CenteredColumn'
 import { Paper } from 'common/Paper'
 import { Selector } from '../common/Selector'
-import { House } from 'models/House/House'
+import { House } from 'models/House'
 
 const OpenButton = styled(Button)({
   width: '100%',

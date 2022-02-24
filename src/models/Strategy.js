@@ -1,4 +1,4 @@
-import { enumEmblems } from '../../utils/constants'
+import { enumEmblems } from '../utils/constants'
 import { uniqueItems } from 'utils/uniqueItems'
 import { Bed } from 'models/Bed'
 
