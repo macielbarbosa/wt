@@ -6,11 +6,13 @@ export const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          minWidth: 5,
           borderRadius: 0,
           fontFamily: 'Romulus',
-          lineHeight: 0.85,
           fontSize: 20,
-          padding: '4px 8px',
+        },
+        containedSizeSmall: {
+          lineHeight: 0.85,
         },
       },
     },

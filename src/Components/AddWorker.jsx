@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { styled } from '@mui/system'
-import { TextField, Typography, IconButton, Button } from '@mui/material'
+import { TextField, Typography, Button } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 
 import { useStrings } from 'strings/context'
@@ -33,7 +33,7 @@ export const AddWorker = () => {
   }
 
   return (
-    <Paper style={{ height: 244, width: 250, padding: open ? 20 : 0 }}>
+    <Paper style={{ height: 255, width: 250, padding: open ? 20 : 0 }}>
       {open ? (
         <Fragment>
           <Typography variant="h6">{strings.addWorker}</Typography>
@@ -64,9 +64,9 @@ export const AddWorker = () => {
                 }}
                 inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
               />
-              <IconButton disabled={!Boolean(worker)} onClick={addWorker} aria-label="add" size="large">
-                <AddIcon fontSize="inherit" />
-              </IconButton>
+              <Button size="small" variant="outlined" disabled={!Boolean(worker)} onClick={addWorker}>
+                <AddIcon />
+              </Button>
             </CenteredColumn>
           </Centered>
         </Fragment>

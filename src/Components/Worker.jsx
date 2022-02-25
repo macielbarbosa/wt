@@ -3,12 +3,14 @@ import { styled } from '@mui/system'
 
 import { workerMetadata } from '../utils/workerMetadata'
 import { NftPaper } from 'common/NftPaper'
-import { genders, multipleGenders } from '../utils/constants'
+import { ASSETS_URL, genders, multipleGenders } from '../utils/constants'
 import { getWorkerImage } from 'utils/worker'
 import { CenteredRow } from 'common/CenteredRow'
 
 const Root = styled(NftPaper)({
-  height: 244,
+  height: 255,
+  backgroundPosition: '30% 70%',
+  backgroundSize: 'cover',
   '& img': {
     marginTop: 0,
   },
@@ -27,7 +29,12 @@ export const Worker = ({ onDelete, onChangeGender, ...worker }) => {
   }
 
   return (
-    <Root onDelete={onDelete}>
+    <Root
+      onDelete={onDelete}
+      backgroundImage={`url("${ASSETS_URL}background/workers/working/${workerClass
+        .replace(' ', '')
+        .toLowerCase()}.png")`}
+    >
       <Info>
         <div>{workerClass}</div>
         <div>{rarity}</div>

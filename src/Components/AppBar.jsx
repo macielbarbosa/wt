@@ -34,7 +34,7 @@ export const AppBar = () => {
         />
         <span>SIMULATOR</span>
       </Brand>
-      <Button variant="contained" onClick={() => window.open('https://worker.town', '_blank').focus()}>
+      <Button size="small" variant="contained" onClick={() => window.open('https://worker.town', '_blank').focus()}>
         {strings.homepage}
       </Button>
     </Root>

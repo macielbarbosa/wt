@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconButton, Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import { ArrowBack } from '@mui/icons-material'
 import { styled } from '@mui/system'
 
@@ -12,7 +12,7 @@ import { CoinImage } from 'common/CoinImage'
 const Root = styled('div')({
   display: 'flex',
   flexDirection: 'column',
-  padding: '20px 40px 40px',
+  padding: '40px',
   minWidth: 500,
   minHeight: 300,
   userSelect: 'none',
@@ -32,7 +32,7 @@ const Root = styled('div')({
 })
 
 const Houses = styled('div')({
-  marginTop: 20,
+  marginTop: 40,
   '& > *:not(:last-child)': {
     marginBottom: 20,
   },
@@ -45,9 +45,9 @@ export const Strategy = ({ onClose }) => {
     <Root>
       <SpaceBetween>
         <div>
-          <IconButton onClick={onClose} size="large" variant="outlined">
+          <Button onClick={onClose} size="small" variant="outlined">
             <ArrowBack />
-          </IconButton>
+          </Button>
         </div>
         <Typography variant="h5">
           {strings.averageDailyProfit}: {strategy.coinsPerDay} <CoinImage large />
