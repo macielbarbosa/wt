@@ -4,7 +4,6 @@ import { Tooltip } from '@mui/material'
 
 import { useStrings } from '../../strings/context'
 import { ASSETS_URL, bedsImages } from 'utils/constants'
-import { getWorkerImage } from 'utils/worker'
 import { Worker } from './Worker'
 
 const Root = styled('div')({
@@ -16,12 +15,8 @@ const Root = styled('div')({
   margin: 10,
   maxWidth: 800,
   borderRadius: 5,
+  backgroundColor: '#00000005',
   border: '1px solid lightgray',
-})
-
-const WorkerImage = styled('img')({
-  width: 65,
-  margin: '0 -15px 0 4px',
 })
 
 const EmblemImage = styled('img')({

@@ -22,6 +22,7 @@ const Root = styled('div')({
   border: '1px solid lightgray',
   padding: 20,
   width: 300,
+  backgroundColor: 'white',
 })
 
 export const Resume = () => {

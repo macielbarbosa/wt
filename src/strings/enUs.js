@@ -14,4 +14,5 @@ export const enUs = {
   coin: 'COIN',
   averageDailyProfit: 'Average daily profit',
   strategy: 'Strategy',
+  homepage: 'Homepage',
 }

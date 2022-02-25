@@ -12,7 +12,7 @@ import { CoinImage } from 'common/CoinImage'
 const Root = styled('div')({
   display: 'flex',
   flexDirection: 'column',
-  padding: '20px 40px',
+  padding: '20px 40px 40px',
   minWidth: 500,
   minHeight: 300,
   userSelect: 'none',
