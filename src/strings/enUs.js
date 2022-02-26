@@ -15,4 +15,5 @@ export const enUs = {
   averageDailyProfit: 'Average daily profit',
   strategy: 'Strategy',
   homepage: 'Homepage',
+  changeGender: 'Change gender',
 }

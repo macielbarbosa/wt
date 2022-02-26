@@ -1,11 +1,15 @@
 import React from 'react'
 import { styled } from '@mui/system'
+import { Female as MuiFemale, Male as MuiMale } from '@mui/icons-material'
+import { Tooltip, Typography } from '@mui/material'
 
-import { workerMetadata } from '../utils/workerMetadata'
 import { NftPaper } from 'common/NftPaper'
 import { ASSETS_URL, genders, multipleGenders } from '../utils/constants'
 import { getWorkerImage } from 'utils/worker'
 import { CenteredRow } from 'common/CenteredRow'
+import { Info as InfoComponent } from 'common/Info'
+import { Coin } from 'common/Coin'
+import { useStrings } from 'strings/context'
 
 const Root = styled(NftPaper)({
   height: 255,
@@ -16,17 +20,49 @@ const Root = styled(NftPaper)({
   },
 })
 
-const Info = styled('div')({
+const Info = styled(InfoComponent)({
   position: 'absolute',
 })
 
+const Male = styled(MuiMale)({
+  marginBottom: -2,
+})
+
+const Female = styled(MuiFemale)({
+  marginBottom: -4,
+})
+
+const Shadow = styled('img')({
+  position: 'absolute',
+  width: 100,
+  bottom: 26,
+  left: 67,
+})
+
+const Image = styled('img')({
+  width: 175,
+  zIndex: 1,
+})
+
+const Clickable = styled('div')({
+  width: 120,
+  height: 120,
+  position: 'absolute',
+  bottom: 30,
+  cursor: 'pointer',
+  zIndex: 2,
+})
+
 export const Worker = ({ onDelete, onChangeGender, ...worker }) => {
-  const { rarity, workingHours, workingReward, workerClass, gender } = worker
+  const strings = useStrings()
+  const { workingHours, workingReward, workerClass, gender } = worker
   const isMultipleGenders = multipleGenders.includes(workerClass)
 
   const toggleGender = () => {
     onChangeGender(gender === genders.male ? genders.female : genders.male)
   }
+
+  const GenderIcon = gender === genders.male ? Male : Female
 
   return (
     <Root
@@ -36,20 +72,22 @@ export const Worker = ({ onDelete, onChangeGender, ...worker }) => {
         .toLowerCase()}.png")`}
     >
       <Info>
-        <div>{workerClass}</div>
-        <div>{rarity}</div>
-        {isMultipleGenders ? (
-          <div style={{ cursor: 'pointer' }} onClick={toggleGender}>
-            {gender}
-          </div>
-        ) : (
-          <div>{gender}</div>
-        )}
-        <div>{workingReward}</div>
-        <div>{workingHours}</div>
+        <Typography component="span" variant="subtitle2" paragraph={false}>
+          {workerClass}
+        </Typography>
+        <GenderIcon fontSize="24" />
+        <Typography variant="subtitle2">
+          {workingReward} <Coin small /> in {workingHours}h
+        </Typography>
       </Info>
       <CenteredRow>
-        <img width="175" src={getWorkerImage(worker)} />
+        <Image width="175" src={getWorkerImage(worker)} />
+        <Shadow src={`${ASSETS_URL}background/workers/shadow.png`} />
+        {isMultipleGenders && (
+          <Tooltip title={strings.changeGender}>
+            <Clickable onClick={toggleGender} />
+          </Tooltip>
+        )}
       </CenteredRow>
     </Root>
   )

@@ -7,7 +7,7 @@ import { useContext } from '../../context'
 import { useStrings } from '../../strings/context'
 import { House } from './House'
 import { SpaceBetween } from 'common/SpaceBetween'
-import { CoinImage } from 'common/CoinImage'
+import { Coin } from 'common/Coin'
 
 const Root = styled('div')({
   display: 'flex',
@@ -50,7 +50,7 @@ export const Strategy = ({ onClose }) => {
           </Button>
         </div>
         <Typography variant="h5">
-          {strings.averageDailyProfit}: {strategy.coinsPerDay} <CoinImage large />
+          {strings.averageDailyProfit}: {strategy.coinsPerDay} <Coin large />
         </Typography>
         <div style={{ width: 40 }} />
       </SpaceBetween>

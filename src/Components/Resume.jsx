@@ -9,7 +9,7 @@ import { Centered } from 'common/Centered'
 import { CenteredRow } from 'common/CenteredRow'
 import { Strategy } from './Strategy'
 import { Visibility } from '@mui/icons-material'
-import { CoinImage } from 'common/CoinImage'
+import { Coin } from 'common/Coin'
 
 const Root = styled('div')({
   '& > :not(:last-child)': {
@@ -44,7 +44,7 @@ export const Resume = () => {
           {strings.workers}: {workers.length}
         </div>
         <div>
-          {strings.averageDailyProfit}: {coinsPerDay} <CoinImage />
+          {strings.averageDailyProfit}: {coinsPerDay} <Coin />
         </div>
         <Centered>
           <Button size="small" startIcon={<Visibility />} onClick={() => setOpenStrategy(true)} variant="outlined">
