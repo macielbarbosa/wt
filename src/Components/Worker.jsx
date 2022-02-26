@@ -77,7 +77,7 @@ export const Worker = ({ onDelete, onChangeGender, ...worker }) => {
         </Typography>
         <GenderIcon fontSize="24" />
         <Typography variant="subtitle2">
-          {workingReward} <Coin small /> in {workingHours}h
+          {workingReward} <Coin /> {strings.in} {workingHours}h
         </Typography>
       </Info>
       <CenteredRow>

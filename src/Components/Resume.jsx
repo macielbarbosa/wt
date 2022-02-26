@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { styled } from '@mui/system'
-import { Button } from '@mui/material'
+import { Button as MuiButton, Typography } from '@mui/material'
 import Dialog from '@mui/material/Dialog'
 
 import { useContext } from '../context'
@@ -13,7 +13,7 @@ import { Coin } from 'common/Coin'
 
 const Root = styled('div')({
   '& > :not(:last-child)': {
-    marginBottom: 20,
+    marginBottom: 10,
   },
   display: 'inline-flex',
   flexDirection: 'column',
@@ -23,6 +23,10 @@ const Root = styled('div')({
   padding: 20,
   width: 300,
   backgroundColor: 'white',
+})
+
+const Button = styled(MuiButton)({
+  marginTop: 15,
 })
 
 export const Resume = () => {
@@ -37,15 +41,15 @@ export const Resume = () => {
   return (
     <CenteredRow>
       <Root>
-        <div>
+        <Typography variant="h6">
           {strings.houses}: {houses.length - 1}
-        </div>
-        <div>
+        </Typography>
+        <Typography variant="h6">
           {strings.workers}: {workers.length}
-        </div>
-        <div>
+        </Typography>
+        <Typography variant="h6">
           {strings.averageDailyProfit}: {coinsPerDay} <Coin />
-        </div>
+        </Typography>
         <Centered>
           <Button size="small" startIcon={<Visibility />} onClick={() => setOpenStrategy(true)} variant="outlined">
             {strings.strategy}

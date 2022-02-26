@@ -16,9 +16,31 @@ export const theme = createTheme({
         },
       },
     },
+    MuiFab: {
+      styleOverrides: {
+        root: {
+          borderRadius: 0,
+        },
+        containedSizeSmall: {
+          lineHeight: 0.85,
+        },
+      },
+    },
   },
   breakpoints: {},
-  typography: {},
+  typography: {
+    h3: {
+      fontFamily: 'Romulus',
+      textTransform: 'uppercase',
+      textShadow: 'rgb(0 0 0 / 30%) 2px 4px 3px',
+      fontWeight: 400,
+      fontSize: 48,
+    },
+    h6: {
+      fontWeight: 400,
+      fontSize: 18,
+    },
+  },
   palette: {
     primary: {
       main: 'rgb(149, 0, 255)',

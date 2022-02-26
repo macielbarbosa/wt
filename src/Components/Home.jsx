@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { styled } from '@mui/system'
+import { Fab as MuiFab, Fade, Typography } from '@mui/material'
+import { KeyboardArrowUp } from '@mui/icons-material'
 
 import { Houses } from './Houses'
 import { Workers } from './Workers'
 import { Resume } from './Resume'
 import { AppBar } from './AppBar'
 import { useStrings } from '../strings/context'
-import { Romulus } from 'common/Romulus'
 
 const Root = styled('div')({
   width: '100%',
@@ -39,27 +40,58 @@ const FirstGroup = styled(Group)({
 
 const SecondGroup = styled(Group)({
   backgroundColor: 'rgb(91, 0, 170)',
+  position: 'relative',
 })
+
+const Fab = styled(MuiFab)({
+  position: 'fixed',
+  right: 80,
+  bottom: 40,
+  zIndex: 10,
+})
+
+const WorkerTitle = styled(Typography)({ color: 'rgb(252, 221, 39)', textShadow: 'black 1px 4px' })
 
 export const Home = () => {
   const strings = useStrings()
+  const [showScrollButton, setShowScrollButton] = useState(document.documentElement.scrollTop >= 800)
+  useEffect(() => {
+    let timeout = null
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (timeout) {
+          clearTimeout(timeout)
+        }
+        timeout = setTimeout(() => {
+          setShowScrollButton(document.documentElement.scrollTop >= 800)
+        }, 200)
+      },
+      false,
+    )
+  })
   return (
     <Root>
       <FirstGroup>
         <Content>
           <AppBar />
           <Resume />
-          <Romulus variant="h3">{strings.houses}</Romulus>
+          <Typography variant="h3" color="white">
+            {strings.houses}
+          </Typography>
           <Houses />
         </Content>
       </FirstGroup>
       <SecondGroup>
         <Content>
-          <Romulus variant="h3" style={{ color: 'rgb(252, 221, 39)', textShadow: 'black 1px 4px' }}>
-            {strings.workers}
-          </Romulus>
+          <WorkerTitle variant="h3">{strings.workers}</WorkerTitle>
           <Workers />
         </Content>
+        <Fade in={showScrollButton}>
+          <Fab color="secondary" size="small" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <KeyboardArrowUp />
+          </Fab>
+        </Fade>
       </SecondGroup>
     </Root>
   )
