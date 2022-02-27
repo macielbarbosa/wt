@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '@mui/material'
+import { Tooltip, Typography } from '@mui/material'
 import { styled } from '@mui/system'
 
 import { NftPaper } from 'common/NftPaper'
@@ -9,13 +9,16 @@ import { getNextArrayItem } from '../utils/getNextArrayItem'
 import { tiers, houseRarities, enumEmblems } from '../utils/constants'
 import { HouseImage } from 'common/HouseImage'
 import { SpaceBetween } from 'common/SpaceBetween'
-import { EmblemImage } from 'common/EmblemImage'
+import { Emblem } from 'common/Emblem'
+import { Info } from 'common/Info'
 
 const Paper = styled(NftPaper)({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
   height: 250,
+  backgroundColor: 'rgba(255, 255, 255, 0.08)',
+  paddingTop: 0,
 })
 
 export const House = ({ rarity, emblem, isFree, onDelete, onChangeRarity, onChangeEmblem, capacity }) => {
@@ -32,21 +35,23 @@ export const House = ({ rarity, emblem, isFree, onDelete, onChangeRarity, onChan
 
   return (
     <Paper onDelete={onDelete} nonDeletable={isFree}>
-      <Centered onClick={toggleRarity} style={{ cursor: 'pointer' }}>
-        <HouseImage rarity={rarity} />
-      </Centered>
+      <Tooltip placement="top" title={strings.changeRarity}>
+        <Centered onClick={toggleRarity} style={{ cursor: 'pointer' }}>
+          <HouseImage rarity={rarity} />
+        </Centered>
+      </Tooltip>
       <SpaceBetween>
-        <div>
-          <div>
-            {isFree && strings.free} {rarity}
-          </div>
-          <div>
+        <Info>
+          <Typography variant="subtitle2">
+            {isFree && strings.free + ' -'} {rarity}
+          </Typography>
+          <Typography variant="subtitle2">
             {strings.capacity}: {capacity}
-          </div>
-        </div>
+          </Typography>
+        </Info>
         {!isFree && (
           <div onClick={toggleEmblem}>
-            <EmblemImage emblem={emblem} />
+            <Emblem emblem={emblem} />
           </div>
         )}
       </SpaceBetween>

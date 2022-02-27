@@ -26,6 +26,13 @@ export const theme = createTheme({
         },
       },
     },
+    MuiDialog: {
+      styleOverrides: {
+        paperWidthMd: {
+          maxWidth: 960,
+        },
+      },
+    },
   },
   breakpoints: {},
   typography: {

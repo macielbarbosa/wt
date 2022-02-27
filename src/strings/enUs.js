@@ -16,5 +16,7 @@ export const enUs = {
   strategy: 'Strategy',
   homepage: 'Homepage',
   changeGender: 'Change gender',
+  changeEmblem: 'Change emblem',
+  changeRarity: 'Change rarity',
   in: 'in',
 }
