@@ -6,6 +6,8 @@ export const enUs = {
   addHouse: 'Add House',
   workerClass: 'Worker class',
   capacity: 'Capacity',
+  house: 'House',
+  worker: 'Worker',
   houses: 'Houses',
   workers: 'Workers',
   noOption: 'No option',

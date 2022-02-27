@@ -29,6 +29,7 @@ export const AppBar = () => {
     <Root>
       <Brand>
         <img
+          alt="Worker Town"
           width="120"
           src="https://www.worker.town/static/media/WorkerTown_Logo_TransparentBG.144530fef6fb9c231f9b.png"
         />

@@ -14,7 +14,7 @@ export const Emblem = ({ emblem }) => {
     emblem === enumEmblems.noEmblem ? (
       <RemoveModeratorTwoTone fontSize="large" style={{ color: 'rgb(35,35,35)' }} />
     ) : (
-      <img width="35" src={ASSETS_URL + `houses/emblems/${emblem.toLowerCase()}.png`} />
+      <img alt="emblem" width="35" src={ASSETS_URL + `houses/emblems/${emblem.toLowerCase()}.png`} />
     )
   return (
     <Root>

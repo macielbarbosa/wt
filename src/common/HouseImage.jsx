@@ -40,7 +40,7 @@ const Unique = styled('img')({
 })
 
 export const HouseImage = ({ rarity }) => {
-  let ImageComponent = (...props) => <img {...props} />
+  let ImageComponent = (...props) => <img alt="img" {...props} />
   switch (rarity) {
     case tiers.tier1:
       ImageComponent = Tier1
@@ -63,6 +63,8 @@ export const HouseImage = ({ rarity }) => {
     case rarities.unique:
       ImageComponent = Unique
       break
+    default:
+      break
   }
-  return <ImageComponent src={ASSETS_URL + houseMetadata[rarity].image} />
+  return <ImageComponent alt="house" src={ASSETS_URL + houseMetadata[rarity].image} />
 }

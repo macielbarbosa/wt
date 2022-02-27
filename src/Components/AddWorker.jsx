@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useRef, useState } from 'react'
 import { styled } from '@mui/system'
 import { TextField, Typography, Button } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
@@ -7,14 +7,19 @@ import { useStrings } from 'strings/context'
 import { useContext } from 'context'
 import { CenteredColumn } from 'common/CenteredColumn'
 import { Centered } from 'common/Centered'
-import { Paper } from 'common/Paper'
+import { Paper as MuiPaper } from 'common/Paper'
 import { Selector } from 'common/Selector'
 import { genders, workerClasses } from '../utils/constants'
 import { Worker } from 'models/Worker'
+import { useOutsideClick } from 'utils/useOutsideClick'
 
 const OpenButton = styled(Button)({
   width: '100%',
   height: '100%',
+})
+
+const Paper = styled(MuiPaper)({
+  transition: 'all 0.1s ease-in',
 })
 
 export const AddWorker = () => {
@@ -23,6 +28,8 @@ export const AddWorker = () => {
   const [open, setOpen] = useState(false)
   const [worker, setWorker] = useState()
   const [amount, setAmount] = useState(1)
+  const ref = useRef(null)
+  useOutsideClick(ref, () => setOpen(false))
 
   const addWorker = () => {
     const { workerClass, gender } = worker
@@ -33,7 +40,7 @@ export const AddWorker = () => {
   }
 
   return (
-    <Paper style={{ height: 255, width: 250, padding: open ? 20 : 0 }}>
+    <Paper ref={ref} style={{ height: 255, width: 250, padding: open ? 20 : 0 }}>
       {open ? (
         <Fragment>
           <Typography variant="h6">{strings.addWorker}</Typography>

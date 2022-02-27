@@ -4,7 +4,7 @@ import { Autocomplete, TextField, MenuItem } from '@mui/material'
 
 import { useStrings } from '../strings/context'
 
-export const Selector = ({ onChange, options, placeholder, label, optionsLabel }) => {
+export const Selector = ({ onChange, options, placeholder, label, optionsLabel, onBlur }) => {
   const strings = useStrings()
   return (
     <Autocomplete
@@ -24,6 +24,7 @@ export const Selector = ({ onChange, options, placeholder, label, optionsLabel }
       disablePortal
       clearOnBlur
       autoHighlight
+      onBlur={onBlur}
     />
   )
 }

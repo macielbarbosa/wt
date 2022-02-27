@@ -1,16 +1,17 @@
 import React from 'react'
-import { Paper, Tooltip } from '@mui/material'
+import { Tooltip } from '@mui/material'
 import { styled } from '@mui/system'
 
-import { useStrings } from '../../strings/context'
 import { ASSETS_URL, enumEmblems } from 'utils/constants'
 import { Bed } from './Bed'
 import { HouseImage } from 'common/HouseImage'
 
-const Root = styled(Paper)({
+const Root = styled('div')({
   display: 'flex',
   flexDirection: 'row',
   padding: 20,
+  border: '1px solid lightgray',
+  borderRadius: 5,
 })
 
 const EmblemImage = styled('img')({
@@ -21,7 +22,6 @@ const EmblemImage = styled('img')({
 })
 
 export const House = ({ value: house }) => {
-  const strings = useStrings()
   const { rarity, emblem, beds } = house
   return (
     <Root>

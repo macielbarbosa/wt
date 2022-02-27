@@ -18,7 +18,7 @@ export const NftPaper = ({ children, nonDeletable = false, onDelete, backgroundI
   const [showButton, setShowButton] = useState(false)
   return (
     <Paper
-      onMouseEnter={() => setShowButton(true)}
+      onMouseOver={() => setShowButton(true)}
       onMouseLeave={() => setShowButton(false)}
       style={{ position: 'relative', width: 250, userSelect: 'none', backgroundImage, overflow: 'hidden' }}
       {...props}

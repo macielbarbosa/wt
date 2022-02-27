@@ -2,7 +2,6 @@ import React from 'react'
 import { styled } from '@mui/system'
 import { Tooltip } from '@mui/material'
 
-import { useStrings } from '../../strings/context'
 import { ASSETS_URL, bedsImages } from 'utils/constants'
 import { Worker } from './Worker'
 
@@ -27,20 +26,22 @@ const EmblemImage = styled('img')({
 })
 
 export const Bed = ({ value: bed }) => {
-  const strings = useStrings()
   const { worker1, worker2, type } = bed
   const workerWithEmblemBonus = [worker1, worker2].find((worker) => worker && worker.withEmblemBonus)
   return (
     <Root>
       <div>
         <Tooltip title={type.name}>
-          <img width="40" src={ASSETS_URL + bedsImages[type.name]} />
+          <img alt="bed" width="40" src={ASSETS_URL + bedsImages[type.name]} />
         </Tooltip>
         <Worker value={worker1} />
         {worker2 && <Worker value={worker2} />}
       </div>
       {workerWithEmblemBonus && (
-        <EmblemImage src={ASSETS_URL + `houses/emblems/${workerWithEmblemBonus.emblem.toLowerCase()}.png`} />
+        <EmblemImage
+          alt="emblem"
+          src={ASSETS_URL + `houses/emblems/${workerWithEmblemBonus.emblem.toLowerCase()}.png`}
+        />
       )}
     </Root>
   )
