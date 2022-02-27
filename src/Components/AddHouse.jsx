@@ -1,7 +1,6 @@
 import React, { Fragment, useRef, useState } from 'react'
 import { styled } from '@mui/system'
 import { Typography, Button, Tooltip } from '@mui/material'
-import AddIcon from '@mui/icons-material/Add'
 
 import { useStrings } from 'strings/context'
 import { useContext } from 'context'

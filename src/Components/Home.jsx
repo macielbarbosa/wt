@@ -8,6 +8,7 @@ import { Workers } from './Workers'
 import { Resume } from './Resume'
 import { AppBar } from './AppBar'
 import { useStrings } from '../strings/context'
+import { Footer } from './Footer'
 
 const Root = styled('div')({
   width: '100%',
@@ -93,6 +94,7 @@ export const Home = () => {
           </Fab>
         </Fade>
       </SecondGroup>
+      <Footer />
     </Root>
   )
 }
