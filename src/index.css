@@ -6,3 +6,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: 'overlay';
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(149, 0, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgb(252, 221, 39);
+}

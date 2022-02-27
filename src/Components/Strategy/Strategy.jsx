@@ -17,18 +17,6 @@ const Root = styled('div')({
   minHeight: 300,
   userSelect: 'none',
   overflowY: 'auto',
-  '&::-webkit-scrollbar': {
-    width: 8,
-  },
-
-  '&::-webkit-scrollbar-track': {
-    background: '#fff',
-  },
-
-  '&::-webkit-scrollbar-thumb': {
-    borderRadius: 5,
-    background: 'rgba(0,0,0, 0.3)',
-  },
 })
 
 const Houses = styled('div')({
