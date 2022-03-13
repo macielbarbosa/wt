@@ -52,7 +52,7 @@ export const AppBar = () => {
           onClick={() => window.open('https://discord.com/users/481238176015450134', '_blank').focus()}
           startIcon={<FaDiscord fontSize="17" />}
         >
-          {strings.sendYourFeedback}
+          {strings.feedback}
         </Button>
       </Actions>
     </Root>
