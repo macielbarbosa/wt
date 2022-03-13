@@ -43,9 +43,11 @@ export const Strategy = ({ onClose }) => {
         <div style={{ width: 40 }} />
       </SpaceBetween>
       <Houses>
-        {strategy.houses.map((house, index) => (
-          <House key={index} value={house} />
-        ))}
+        {strategy.houses
+          .filter((house) => !house.isEmpty)
+          .map((house, index) => (
+            <House key={index} value={house} />
+          ))}
       </Houses>
     </Root>
   )
