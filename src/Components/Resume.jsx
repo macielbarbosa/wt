@@ -42,10 +42,12 @@ export const Resume = () => {
     <CenteredRow>
       <Root>
         <Typography variant="h6">
-          {houses.length - 1} {houses.length > 2 ? strings.houses : strings.house}
+          {houses.length > 1 ? houses.length - 1 + ' ' : ''}
+          {houses.length > 2 ? strings.houses : houses.length === 2 ? strings.house : strings.noHouse}
         </Typography>
         <Typography variant="h6">
-          {workers.length} {houses.length > 1 ? strings.workers : strings.worker}
+          {workers.length ? workers.length + ' ' : ''}
+          {workers.length > 1 ? strings.workers : workers.length === 1 ? strings.worker : strings.noWorker}
         </Typography>
         <Typography variant="h6">
           {strings.averageDailyProfit}: {coinsPerDay} <Coin />

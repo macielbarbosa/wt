@@ -21,4 +21,6 @@ export const enUs = {
   changeEmblem: 'Change emblem',
   changeRarity: 'Change rarity',
   in: 'in',
+  noHouse: 'No House',
+  noWorker: 'No Worker',
 }
