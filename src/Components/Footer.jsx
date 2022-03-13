@@ -11,7 +11,7 @@ const Root = styled(CenteredRow)({
 export const Footer = () => {
   return (
     <Root>
-      <a href="https://worker.town" target="_blank">
+      <a href="https://worker.town" target="_blank" rel="noreferrer">
         <img
           alt="Worker Town"
           width="135"
