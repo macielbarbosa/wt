@@ -69,4 +69,8 @@ export class House {
   get isSurplusBed() {
     return this.beds.length > this.capacity
   }
+
+  get isEmpty() {
+    return !this.beds.length
+  }
 }

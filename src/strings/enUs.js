@@ -23,4 +23,5 @@ export const enUs = {
   in: 'in',
   noHouse: 'No House',
   noWorker: 'No Worker',
+  sendYourFeedback: 'Send your feedback',
 }

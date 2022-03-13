@@ -1,6 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/system'
 import { Button } from '@mui/material'
+import { FaDiscord } from 'react-icons/fa'
 
 import { useStrings } from '../strings/context'
 import { SpaceBetween } from 'common/SpaceBetween'
@@ -22,6 +23,12 @@ const Brand = styled('div')({
   },
 })
 
+const Actions = styled('div')({
+  '& > :not(:last-child)': {
+    marginRight: 8,
+  },
+})
+
 export const AppBar = () => {
   const strings = useStrings()
 
@@ -35,9 +42,19 @@ export const AppBar = () => {
         />
         <span>SIMULATOR</span>
       </Brand>
-      <Button size="small" variant="contained" onClick={() => window.open('https://worker.town', '_blank').focus()}>
-        {strings.homepage}
-      </Button>
+      <Actions>
+        <Button size="small" variant="contained" onClick={() => window.open('https://worker.town', '_blank').focus()}>
+          {strings.homepage}
+        </Button>
+        <Button
+          size="small"
+          variant="contained"
+          onClick={() => window.open('https://discord.com/users/481238176015450134', '_blank').focus()}
+          startIcon={<FaDiscord fontSize="17" />}
+        >
+          {strings.sendYourFeedback}
+        </Button>
+      </Actions>
     </Root>
   )
 }

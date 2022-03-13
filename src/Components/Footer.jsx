@@ -11,11 +11,13 @@ const Root = styled(CenteredRow)({
 export const Footer = () => {
   return (
     <Root>
-      <img
-        alt="Worker Town"
-        width="135"
-        src="https://www.worker.town/static/media/WorkerTown_Logo_TransparentBG.144530fef6fb9c231f9b.png"
-      />
+      <a href="https://worker.town" target="_blank">
+        <img
+          alt="Worker Town"
+          width="135"
+          src="https://www.worker.town/static/media/WorkerTown_Logo_TransparentBG.144530fef6fb9c231f9b.png"
+        />
+      </a>
     </Root>
   )
 }
