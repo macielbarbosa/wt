@@ -24,4 +24,5 @@ export const enUs = {
   noHouse: 'No House',
   noWorker: 'No Worker',
   feedback: 'Feedback',
+  developedBy: 'Developed by',
 }
