@@ -1,7 +1,4 @@
-import { enumLanguage } from './enumLanguage'
-
-export const enUs = {
-  language: enumLanguage.english,
+export const english = {
   addWorker: 'Add Worker',
   addHouse: 'Add House',
   workerClass: 'Worker class',
@@ -12,8 +9,6 @@ export const enUs = {
   workers: 'Workers',
   noOption: 'No option',
   free: 'Free',
-  coins: 'COINS',
-  coin: 'COIN',
   averageDailyProfit: 'Average daily profit',
   strategy: 'Strategy',
   homepage: 'Homepage',

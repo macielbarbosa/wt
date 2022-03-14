@@ -1,10 +1,12 @@
 import React from 'react'
 import { styled } from '@mui/system'
-import { Button } from '@mui/material'
+import { Button, MenuItem, TextField as MuiTextField } from '@mui/material'
 import { FaDiscord } from 'react-icons/fa'
 
-import { useStrings } from '../strings/context'
+import { useLanguage, useStrings } from '../strings/context'
 import { SpaceBetween } from 'common/SpaceBetween'
+import { enumLanguage } from 'strings/enumLanguage'
+import { Language } from '@mui/icons-material'
 
 const Root = styled(SpaceBetween)({
   alignItems: 'flex-start',
@@ -29,8 +31,24 @@ const Actions = styled('div')({
   },
 })
 
+const TextField = styled(MuiTextField)({
+  backgroundColor: 'white',
+  border: '1px solid rgba(149, 0, 255, 0.5)',
+  '& svg': {
+    color: 'rgb(149, 0, 255)',
+  },
+  '& .MuiSelect-select': {
+    color: 'rgb(149, 0, 255)',
+    padding: '2px 0px 2px 5px',
+  },
+  '& .MuiSvgIcon-root': {
+    paddingLeft: 5,
+  },
+})
+
 export const AppBar = () => {
   const strings = useStrings()
+  const { language, setLanguage } = useLanguage()
 
   return (
     <Root>
@@ -54,6 +72,26 @@ export const AppBar = () => {
         >
           {strings.feedback}
         </Button>
+        <TextField
+          select
+          value={language}
+          variant="standard"
+          InputProps={{
+            startAdornment: <Language fontSize="small" />,
+          }}
+          onChange={(event) => {
+            setLanguage(event.target.value)
+            setTimeout(() => {
+              document.activeElement.blur()
+            }, 200)
+          }}
+        >
+          {Object.values(enumLanguage).map((language) => (
+            <MenuItem key={language} value={language}>
+              {language}
+            </MenuItem>
+          ))}
+        </TextField>
       </Actions>
     </Root>
   )

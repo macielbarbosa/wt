@@ -6,6 +6,7 @@ StringsContext.displayName = 'StringsContext'
 export const withStrings = withContext(StringsContext, 'strings')
 export const useStrings = () => React.useContext(StringsContext)
 
-export const SetStringsContext = React.createContext()
-SetStringsContext.displayName = 'SetStringsContext'
-export const useSetStrings = () => React.useContext(SetStringsContext)
+export const LanguageContext = React.createContext()
+LanguageContext.displayName = 'languageContext'
+export const withLanguage = withContext(LanguageContext, 'language')
+export const useLanguage = () => React.useContext(LanguageContext)

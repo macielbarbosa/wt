@@ -1,4 +1,5 @@
 export const enumLanguage = {
-  portuguese: 'Português',
   english: 'English',
+  spanish: 'Español',
+  portuguese: 'Português',
 }
