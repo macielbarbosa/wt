@@ -49,7 +49,6 @@ export const AddWorker = () => {
               <Selector
                 options={workersOptions}
                 placeholder="Adventurer"
-                label={strings.addWorker}
                 optionsLabel="workerClass"
                 onChange={setWorker}
               />
